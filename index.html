@@ -3,194 +3,312 @@
 	<head>
 		<!-- <script src="reloadScript.js"></script> -->
 		<title>MAIN HOME PAGE</title>
-		<link rel="stylesheet" href="index.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&family=Poppins:wght@200;500&display=swap"
-			rel="stylesheet"
-		/>
+		<link rel="stylesheet" href="css/index.css" />
+		
 	</head>
 
-	<!-- <body style="background-color: #242424"> -->
-	<body style="background-image: linear-gradient(to bottom right, black, rgb(0, 28, 105));">
-
+	<body
+		style="
+			background-image: linear-gradient(
+				to bottom right,
+				black,
+				rgb(0, 28, 105)
+			);
+		"
+	>
 		<div class="nav-bar">
 			<a class="logo" href="index.html">
-				<img src="logo.jpg" class="logo" />
+				<img src="assets/logo.jpg" class="logo" />
 			</a>
 
 			<div style="display: flex; justify-content: end; width: 100%">
 				<div class="nav-bar-options">
 					<div class="nav-bar-search">
-						<input type="text" class="nav-bar-search-input" />
+						<input
+							type="text"
+							class="nav-bar-search-input"
+							placeholder="Search"
+						/>
 						<img
-							src="search.svg"
-							class="search-icon"
+							src="assets/search.svg"
+							class="nav-bar-search-icon"
 							style="width: 24px; height: 24px"
 							class="nav-bar-search-icon"
 						/>
 					</div>
-					<a class="nav-bar-item" href="about.html">Artists</a>
-					<a class="nav-bar-item" href="contact.html">Albums</a>
-				</div>
+					<a href="about.html" style="cursor: default">
+						<button class="nav-bar-item">Artists</button>
+					</a>
+					<a href="contact.html" style="cursor: default">
+						<button class="nav-bar-item">Albums</button>
+					</a>
+
+					<div class="profile-logo">
+						<img
+							class="profile-logo-image"
+							src="album-cover/album1.jpg"
+						/>
+					</div>
+</div>
 			</div>
 		</div>
 
 		<div>
 			<div style="padding-left: 0.5%; margin-top: 100px">
-				<p class="list-of-cards-title" style="color: white">
-					TOP TRENDING SONGS
-				</p>
+				<div style="display: flex; align-items: center">
+					<p class="list-of-cards-title">TOP TRENDING SONGS</p>
+					<div style="display: flex; position: absolute; right: 15px">
+						<a>
+							<button class="see-more-button">see more</button>
+						</a>
+					</div>
+				</div>
 				<div class="list-of-cards">
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="song-cover/song1.png"
+								class="card-image"
 							/>
 							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-sub-name">Ed Sheeran</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="song-cover/song1.png"
+								class="card-image"
 							/>
 							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-sub-name">Ed Sheeran</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="song-cover/song1.png"
+								class="card-image"
 							/>
 							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-sub-name">Ed Sheeran</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="song-cover/song1.png"
+								class="card-image"
 							/>
 							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-sub-name">Ed Sheeran</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="song-cover/song1.png"
+								class="card-image"
 							/>
 							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-sub-name">Ed Sheeran</p>
 						</div>
 					</div>
 
-					<div class="card-item">
-						<div>
-							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
-							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+					<div class="see-more-item">
+						<div style="width: 100%">
+							<span>
+								<img
+									class="see-more-arrow"
+									src="assets/arrow.svg"
+								/>
+							</span>
 						</div>
 					</div>
 				</div>
 
-				<p class="list-of-cards-title">TOP TRENDING ALBUMS</p>
+				<div style="display: flex; align-items: center">
+					<p class="list-of-cards-title">TOP TRENDING ALBUMS</p>
+					<div style="display: flex; position: absolute; right: 15px">
+						<a>
+							<button class="see-more-button">see more</button>
+						</a>
+					</div>
+				</div>
 				<div class="list-of-cards">
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="album-cover-photos/album1.jpg"
-								width="100%"
-								style="border-radius: 10px"
+								src="album-cover/album1.jpg"
+								class="card-image"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-name">Human</p>
+							<p class="card-sub-name">One Republic</p>
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="album-cover/album1.jpg"
+								class="card-image"
+							/>
+							<p class="card-name">Human</p>
+							<p class="card-sub-name">One Republic</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="album-cover/album1.jpg"
+								class="card-image"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-name">Human</p>
+							<p class="card-sub-name">One Republic</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="album-cover/album1.jpg"
+								class="card-image"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-name">Human</p>
+							<p class="card-sub-name">One Republic</p>
 						</div>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="album-cover/album1.jpg"
+								class="card-image"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-name">Human</p>
+							<p class="card-sub-name">One Republic</p>
 						</div>
 					</div>
 
-					<div class="card-item">
-						<div>
-							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
-							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+					<div class="see-more-item">
+						<div style="width: 100%">
+							<span>
+								<img
+									class="see-more-arrow"
+									src="assets/arrow.svg"
+								/>
+							</span>
 						</div>
+					</div>
+				</div>
+
+				<div style="display: flex; align-items: center">
+					<p class="list-of-cards-title">TOP TRENDING ARTISTS</p>
+					<div style="display: flex; position: absolute; right: 15px">
+						<a>
+							<button class="see-more-button">see more</button>
+						</a>
+					</div>
+				</div>
+				<div class="list-of-cards">
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+						</div>
+						<span>
+							<img
+								class="verified-badge"
+								src="assets/verified.svg"
+							/>
+						</span>
 					</div>
 
 					<div class="card-item">
-						<div>
+						<div style="width: 100%">
 							<img
-								src="song-cover-photos/song1.png"
-								width="100%"
-								style="border-radius: 10px"
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-artist">Ed Sheeran</p>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<!-- <span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span> -->
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<!-- <span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span> -->
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span>
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span>
+						</div>
+					</div>
+					<div class="see-more-item">
+						<div style="width: 100%">
+							<span>
+								<img
+									class="see-more-arrow"
+									src="assets/arrow.svg"
+								/>
+							</span>
 						</div>
 					</div>
 				</div>
