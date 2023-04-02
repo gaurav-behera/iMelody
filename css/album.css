@@ -1,0 +1,108 @@
+.list-of-songs-title {
+	font-family: "Urbanist";
+	font-weight: 800;
+	/* background-color: rgb(255, 0, 0); */
+	font-size: 46px;
+	margin: 0px;
+	margin-bottom: 10px;
+	max-width: 1900px;
+	color: white;
+}
+
+.list-of-songs {
+	display: grid;
+	overflow-y:scroll;
+	flex-wrap: nowrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 25px;
+	transform: translateY(-15px);
+	padding-bottom: 20px;
+	scrollbar-width: none;
+	vertical-align: middle;
+	align-items: center;
+}
+
+.list-of-songs::-webkit-scrollbar {
+	display: none;
+}
+
+.song-item {
+	background-color: #323232;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width:90%;
+	/* height: 100px; */
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+	transition: transform 300ms, box-shadow linear 300ms;
+
+	display: inline-flex;
+}
+
+.song-item:hover {
+	box-shadow: 5px 5px 10px 0px #1b5674;
+	transform: scale(1.1);
+	cursor: default;
+}
+
+.song-item:active {
+	background-color: #424242;
+}
+
+.song-details{
+	margin-left: 20px;
+}
+.song-image {
+	border-radius: 15px;
+	/* width: 100%; */
+	min-width: 100px;
+	max-width: 150px;
+	/* height: 100%; */
+	margin-right: 30px;
+	object-fit: contain;
+}
+
+.song-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 10px;
+}
+.song-artist {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 22px;
+	line-height: 100px;
+}
+
+.song-genre{
+	border-radius: 20px;
+	height: 35px;
+	display: flex;
+	margin: 5px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #b9d6ef;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	font-family: "Urbanist";
+	font-size: 22px;
+	font-weight: 600;
+	transition: background-color 400ms, color 400ms;
+}
+
+.rating-star{
+	width: 30px;
+	margin-right: 10px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 100px;
+}

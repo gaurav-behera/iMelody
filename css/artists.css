@@ -1,0 +1,154 @@
+.banner {
+	width: 100%;
+	z-index: 0;
+	position: relative;
+}
+
+.banner-image {
+	object-fit: contain;
+	aspect-ratio: 4;
+	width: 100%;
+	z-index: 0;
+}
+
+.banner-image-overlay {
+	object-fit: contain;
+	aspect-ratio: 4;
+	width: 100%;
+	z-index: 0;
+	background-image: linear-gradient(
+		-15deg,
+		hsl(224, 100%, 21%),
+		hsla(0, 0%, 0%, 0)
+	);
+	position: absolute;
+	top: 0;
+}
+
+.artist-name {
+	color: white;
+	z-index: 1;
+	position: absolute;
+	bottom: 0;
+	right: 75px;
+}
+
+.verified-badge {
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	transform: translateY(3px);
+}
+
+.follow-button {
+	border-radius: 20px;
+	margin: 5px;
+	font-size: 22px;
+	position: absolute;
+	right: 0;
+	margin-top: 15px;
+	margin-right: 70px;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+
+.follow-text {
+	border: 3px solid #b9d6ef;
+	background-color: transparent;
+	color: #b9d6ef;
+	border-radius: 25px;
+	font-size: 24px;
+	font-family: "Poppins";
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+
+.follow-button:hover > .follow-text {
+	border: 3px solid #2e2929;
+	background-color: #b9d6ef;
+	color: #2e2929;
+}
+
+.follow-button:active > .follow-text {
+	border: 3px solid white;
+	background-color: rgba(91, 156, 213, 0.515);
+	color: white;
+}
+
+.albums-title {
+	font-family: "Urbanist";
+	font-weight: 800;
+	font-size: 64px;
+	margin: 0px;
+	color: white;
+	position: absolute;
+	left: 0;
+	margin-left: 45px;
+	margin-top: 15px;
+	letter-spacing: 3px;
+}
+
+.grid-of-cards {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+	flex-direction: row;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 25px;
+	transform: translateY(-15px);
+	padding-bottom: 20px;
+	scrollbar-width: none;
+	vertical-align: middle;
+	align-items: center;
+}
+
+.card-item {
+	background-color: #323232;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 1px;
+	margin-bottom: 40px;
+	/* min-width: 250px; */
+	min-width: 5%;
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+	transition: transform 300ms, box-shadow linear 300ms;
+
+	scroll-snap-align: center;
+
+	line-height: 5px;
+}
+
+.card-item:hover {
+	box-shadow: 5px 5px 10px 0px #1b5674;
+	transform: scale(1.1);
+	cursor: default;
+}
+
+.card-item:active {
+	background-color: #424242;
+}
+
+.card-image {
+	border-radius: 10px;
+	width: 100%;
+	object-fit: contain;
+}
+
+.card-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 26px;
+}
+.card-sub-name {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 22px;
+}
