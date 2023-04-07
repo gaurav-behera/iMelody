@@ -14,6 +14,70 @@
 	display: none;
 }
 
+.song-item {
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	scroll-snap-align: start;
+	text-align: center;
+}
+
+.song-image {
+	width: 300px;
+	height: 300px;
+	transition: all 300ms;
+	/* background-image: url("../song-cover/song1.png"); */
+}
+.song-image:hover {
+	transform: translateY(30px) scale(1.1);
+}
+.song-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 10px;
+	transition: transform 400ms, font-size 400ms;
+	pointer-events: none;
+}
+
+.song-artist {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 26px;
+	transition: transform 400ms, font-size 400ms;
+	pointer-events: none;
+}
+
+.song-image:hover ~ .song-name {
+	transform: translate(0, -80px);
+	font-size: 40px;
+	pointer-events: none;
+}
+
+.song-image:hover ~ .song-artist {
+	transform: translate(0, -90px);
+	/* opacity: 0; */
+	font-size: 30px;
+	pointer-events: none;
+}
+
+.song-image:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 0%;
+	width: 100%;
+	bottom: 0;
+	z-index: 3;
+	transition: height 500ms;
+	background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.song-image:hover:before {
+	height: 50%;
+}
 
 .vertical-items-div {
 	width: 65%;
@@ -140,3 +204,138 @@
 	color: white;
 }
 
+.list-of-albums {
+	display: grid;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+	grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+	flex-direction: row;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 25px;
+	transform: translateY(-15px);
+	padding-bottom: 20px;
+	scrollbar-width: none;
+	vertical-align: middle;
+	align-items: center;
+}
+
+.album-item {
+	/* background-color: #323232; */
+	/* backdrop-filter: saturate(150%) blur(10px); */
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 1px;
+	margin-bottom: 40px;
+	/* min-width: 250px; */
+	min-width: 5%;
+	border-radius: 50px;
+	/* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4); */
+	transition: transform 300ms, box-shadow linear 300ms;
+
+	scroll-snap-align: center;
+
+	line-height: 5px;
+}
+
+.album-info-card {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	overflow: hidden;
+	animation: wave-reverse 0.5s ease-in-out;
+}
+
+.album-info-card-text {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: white;
+	font-family: "Poppins";
+	font-size: 20px;
+text-align: center;}
+
+.album-item:hover {
+	/* box-shadow: 5px 5px 10px 0px #1b5674; */
+	transform: scale(1.1);
+	cursor: default;
+}
+
+.album-card:hover > .album-info-card {
+	height: fit-content;
+	transition: height 1s;
+
+	animation: wave 0.75s ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+.album-image {
+	border-radius: 30px;
+	width: 100%;
+	object-fit: contain;
+}
+
+.album-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 32px;
+	text-align: center;
+}
+.album-sub-name {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 24px;
+	text-align: center;
+}
+
+@keyframes wave {
+	0% {
+		height: 0;
+		overflow: hidden;
+		filter: blur(30px);
+		backdrop-filter: saturate(500%) blur(100px);
+	}
+	25% {
+		height: 50px;
+		border-radius: 50% 50% 0 0;
+	}
+	40% {
+		height: 100px;
+		border-radius: 75% 75% 0 0;
+		padding-top: 20%;
+	}
+	80% {
+		height: 75px;
+		border-radius: 50% 50% 0 0;
+	}
+	90% {
+		height: 75px;
+		border-radius: 20px 20px 0 0;
+	}
+	100% {
+		height: 75px;
+		border-radius: 30px 30px 0 0;
+		backdrop-filter: saturate(120%) blur(20px);
+	}
+}
+
+@keyframes wave-reverse {
+	0% {
+		backdrop-filter: saturate(120%) blur(20px);
+		height: fit-content;
+		border-radius: 30px 30px 0 0;
+	}
+	25% {
+		height: 100px;
+	}
+	50% {
+		height: 50px;
+	}
+	100% {
+		height: 0;
+		border-radius: 30px 30px 0 0;
+	}
+}

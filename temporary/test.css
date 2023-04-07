@@ -1,0 +1,20 @@
+.square {
+	height: 300px;
+	widtH: 300px;
+	border: 1px solid black;
+	position: relative;
+	background-image: url("http://placekitten.com/g/300/300");
+  }
+  .square:before {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 0%;
+	width: 100%;
+	bottom: 0;
+	transition: height 0.5s ease-out;
+	background: linear-gradient(to bottom, transparent 0%, black 100%);
+  }
+  .square:hover:before {
+	height: 100%;
+  }
