@@ -53,7 +53,8 @@
 }
 
 .song-item {
-	background-color: #323232;
+	/* background-color: #323232; */
+	backdrop-filter: saturate(170%) blur(10px);
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
@@ -80,7 +81,9 @@
 }
 
 .song-item:active {
-	background-color: #424242;
+	/* background-color: #424242; */
+	backdrop-filter: saturate(220%) blur(10px);
+
 }
 
 .song-details{

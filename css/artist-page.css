@@ -105,7 +105,8 @@
 }
 
 .card-item {
-	background-color: #323232;
+	/* background-color: #323232; */
+	backdrop-filter: saturate(150%) blur(10px);
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
@@ -131,7 +132,9 @@
 }
 
 .card-item:active {
-	background-color: #424242;
+	/* background-color: #424242; */
+	backdrop-filter: saturate(190%) blur(10px);
+
 }
 
 .card-image {

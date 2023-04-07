@@ -3,6 +3,7 @@
 	<head>
 		<!-- <script src="reloadScript.js"></script> -->
 		<title>MAIN HOME PAGE</title>
+		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/nav-bar.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,11 +25,12 @@
 				black,
 				rgb(0, 28, 105)
 			);
+			height: 190vh;
 		"
 	>
 		<div class="nav-bar">
 			<a class="logo" href="index.html">
-				<img src="assets/logo.jpg" class="logo" />
+				<img src="assets/logo.png" class="logo" />
 			</a>
 
 			<div style="display: flex; justify-content: end; width: 100%">
@@ -45,11 +47,11 @@
 							class="nav-bar-search-icon"
 						/>
 					</div>
-					<button class="nav-bar-item " >
+					<button class="nav-bar-item">
 						<a href="about.html">About</a>
 					</button>
-					<button class="nav-bar-item" >
-						<a href="artists.html" >Artists</a>
+					<button class="nav-bar-item">
+						<a href="artists.html">Artists</a>
 					</button>
 					<div class="profile-logo">
 						<img
@@ -325,6 +327,83 @@
 							<p class="card-name" style="display: inline-block">
 								Marshmellow
 							</p>
+							<!-- <span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span> -->
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<!-- <span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span> -->
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<!-- <span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span> -->
+						</div>
+					</div>
+				</div>
+
+				<div style="display: flex; align-items: center; height: 300px">
+					<p class="list-of-cards-title">TOP TRENDING ARTISTS</p>
+				</div>
+				<div class="list-of-cards">
+					<div class="card-item artist-card">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image artist-card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
+							<span>
+								<img
+									class="verified-badge"
+									src="assets/verified.svg"
+								/>
+							</span>
+							<div class="artist-card-info">
+								<p class="card-name">Card Name</p>
+								<p class="card-sub-name" style="line-height: normal;">This is some information about the card</div>
+						</div>
+					</div>
+					<div class="card-item">
+						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
 							<span>
 								<img
 									class="verified-badge"
@@ -350,12 +429,19 @@
 							</span>
 						</div>
 					</div>
-					<div class="see-more-item">
+					<div class="card-item">
 						<div style="width: 100%">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="card-image"
+							/>
+							<p class="card-name" style="display: inline-block">
+								Marshmellow
+							</p>
 							<span>
 								<img
-									class="see-more-arrow"
-									src="assets/arrow.svg"
+									class="verified-badge"
+									src="assets/verified.svg"
 								/>
 							</span>
 						</div>
@@ -364,6 +450,52 @@
 			</div>
 		</div>
 
-		<footer>FOOTER</footer>
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="assets/logo.png" />
+					<p class="footer-tagline">Your song guide</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">About</p>
+					<p class="footer-section-mid-item">Artists</p>
+					<p class="footer-section-mid-item">Sitemap</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">Terms and conditions</p>
+					<p class="footer-section-mid-item">Privacy Policy</p>
+					<p class="footer-section-mid-item">Cookie Policy</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">hello@imelody.com</p>
+					</div>
+					<div class="footer-socials">
+						<img
+							class="footer-socials-item"
+							src="assets/social-fb-white.png"
+						/>
+						<img
+							class="footer-socials-item"
+							src="assets/social-ig-white.png"
+						/>
+						<img
+							class="footer-socials-item"
+							src="assets/social-tw-white.png"
+						/>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 iMelody. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>

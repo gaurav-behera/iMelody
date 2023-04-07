@@ -1,0 +1,142 @@
+.horizontal-items-div {
+	display: flex;
+	flex-direction: row;
+	overflow: scroll;
+	flex-wrap: nowrap;
+	scrollbar-width: none;
+	vertical-align: middle;
+	align-items: center;
+	scroll-snap-points-x: repeat(400px);
+	scroll-snap-type: x mandatory;
+}
+
+.horizontal-items-div::-webkit-scrollbar {
+	display: none;
+}
+
+
+.vertical-items-div {
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.list-of-items-title {
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: white;
+	line-height: 30px;
+}
+
+.list-of-artists {
+	display: grid;
+	overflow-y: scroll;
+	/* flex-wrap: nowrap; */
+	padding-top: 25px;
+	/* margin-left: 300px; */
+
+	padding-right: 20px;
+
+	/* transform: translateY(-15px); */
+	padding-bottom: 20px;
+	height: 410px;
+	scrollbar-width: none;
+}
+
+.list-of-artists::-webkit-scrollbar {
+	display: none;
+}
+
+.artist-item {
+	/* background-color: #323232; */
+	border-radius: 75px 25px 25px 75px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-right: 15px;
+	margin-left: 5px;
+	/* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4); */
+	transition: transform 300ms, box-shadow linear 300ms;
+
+	display: inline-flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.artist-item:hover {
+	backdrop-filter: saturate(120%) blur(10px);
+
+	transform: scale(1.01);
+	cursor: default;
+}
+
+.artist-item:active {
+	backdrop-filter: saturate(150%) blur(10px);
+}
+
+.artist-image {
+	border-radius: 50%;
+	/* width: 100%; */
+	min-width: 80px;
+	max-width: 120px;
+	/* height: 100%; */
+	margin: 0;
+	margin-right: 30px;
+
+	object-fit: contain;
+}
+
+.artist-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 10px;
+}
+.artist-details {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 26px;
+	line-height: 10px;
+}
+
+.see-more-button {
+	border-radius: 20px;
+	position: absolute;
+	right: 0;
+	margin-top: 15px;
+	margin-right: 50px;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+
+.see-more-text {
+	border: 3px solid #b9d6ef;
+	background-color: transparent;
+	color: #b9d6ef;
+	border-radius: 25px;
+	font-size: 20px;
+	font-family: "Poppins";
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+
+.see-more-button:hover > .see-more-text {
+	border: 3px solid #2e2929;
+	background-color: #b9d6ef;
+	color: #2e2929;
+}
+
+.see-more-button:active > .see-more-text {
+	border: 3px solid white;
+	background-color: rgba(91, 156, 213, 0.515);
+	color: white;
+}
+

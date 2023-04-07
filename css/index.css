@@ -1,4 +1,3 @@
-
 .list-of-cards-title {
 	font-family: "Urbanist";
 	font-weight: 800;
@@ -117,4 +116,30 @@
 	display: inline-block;
 	width: 100%;
 	height: 100%;
+}
+
+.artist-card {
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.artist-card-info {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	transition: all 0.3s ease;
+}
+.artist-card:hover .artist-card-info {
+	/* right: 20%; */
+}
+.artist-card:hover .artist-card-info {
+	left: 0;
+	/* width: 500px; */
+}
+.artist-card:hover .card-item {
+	width: 900px;
 }
