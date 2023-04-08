@@ -77,7 +77,7 @@
 }
 
 .albums-title {
-	font-family: "Urbanist";
+	font-family: "Poppins";
 	font-weight: 800;
 	font-size: 64px;
 	margin: 0px;
@@ -105,24 +105,16 @@
 }
 
 .card-item {
-	/* background-color: #323232; */
 	backdrop-filter: saturate(150%) blur(10px);
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 10px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 1px;
-	margin-bottom: 40px;
-	/* min-width: 250px; */
+	padding: 10px 10px 1px 10px;
+	margin: 0 20px 40px 20px;
 	min-width: 5%;
 	border-radius: 15px;
 	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
 	transition: transform 300ms, box-shadow linear 300ms;
-
 	scroll-snap-align: center;
-
 	line-height: 5px;
+	text-align: center;
 }
 
 .card-item:hover {
@@ -134,7 +126,6 @@
 .card-item:active {
 	/* background-color: #424242; */
 	backdrop-filter: saturate(190%) blur(10px);
-
 }
 
 .card-image {
@@ -144,6 +135,7 @@
 }
 
 .card-name {
+	text-decoration: none;
 	color: white;
 	font-family: "Urbanist";
 	font-weight: 600;

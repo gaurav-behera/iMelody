@@ -1,92 +1,445 @@
-.list-of-cards-title {
-	font-family: "Urbanist";
-	font-weight: 800;
-	/* background-color: rgb(255, 0, 0); */
-	font-size: 46px;
-	margin: 0px;
-	margin-bottom: 10px;
-	max-width: 1900px;
-	color: white;
-}
-
-.list-of-cards {
+.horizontal-items-div {
 	display: flex;
 	flex-direction: row;
-	overflow-x: scroll;
+	overflow: scroll;
 	flex-wrap: nowrap;
-	padding-left: 5px;
-	padding-right: 5px;
-	padding-top: 25px;
-	transform: translateY(-15px);
-	padding-bottom: 20px;
 	scrollbar-width: none;
 	vertical-align: middle;
 	align-items: center;
-	/* scroll-snap-type: x mandatory; */
+	overflow-y: hidden;
+	scroll-snap-points-x: repeat(400px);
+	scroll-snap-type: x mandatory;
 }
 
-.list-of-cards::-webkit-scrollbar {
+.horizontal-items-div::-webkit-scrollbar {
 	display: none;
 }
 
-.card-item {
-	background-color: #323232;
+.song-item {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 40px;
+	height: 500px;
+	scroll-snap-align: start;
+	text-align: center;
+}
+
+.song-image {
+	object-fit: contain;
+	transition: all 300ms;
+	/* background-image: url("../song-cover/song1.png"); */
+}
+.song-image:hover {
+	transform: translateY(30px) scale(1.1);
+}
+
+.song-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 10px;
+	transition: transform 400ms, font-size 400ms;
+	pointer-events: none;
+}
+
+.song-artist {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 26px;
+	transition: transform 400ms, font-size 400ms;
+	pointer-events: none;
+}
+
+.song-image:hover ~ .song-name {
+	transform: translate(0, -80px);
+	font-size: 40px;
+	pointer-events: none;
+}
+
+.song-image:hover ~ .song-artist {
+	transform: translate(0, -100px);
+	/* opacity: 0; */
+	font-size: 30px;
+	pointer-events: none;
+}
+
+.song-image:before {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 0%;
+	width: 100%;
+	bottom: 0;
+	z-index: 3;
+	transition: height 500ms;
+	background: linear-gradient(to bottom, transparent 0%, black 100%);
+}
+
+.song-image:hover:before {
+	height: 50%;
+}
+
+.vertical-items-div {
+	width: 65%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.list-of-items-title {
+	font-family: "Poppins";
+	font-weight: 600;
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: white;
+	line-height: 30px;
+}
+
+.list-of-artists {
+	display: grid;
+	overflow-y: scroll;
+	padding-top: 25px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	height: 490px;
+	scrollbar-width: none;
+}
+
+.bottom-gradient {
+	border-radius: 25px 25px 25px 25px;
+	content: "";
+	display: block;
+	position: absolute;
+	transform: translateY(-50px);
+	z-index: 2;
+	height: 50px;
+	width: 32%;
+	transition: height 500ms;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+}
+
+.list-of-artists::-webkit-scrollbar {
+	display: none;
+}
+
+.artist-item {
+	/* background-color: #323232; */
+	border-radius: 75px 25px 25px 75px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 1px;
-	margin-bottom: 15px;
-	min-width: 250px;
-	min-width: 20%;
-	/* max-width: 400px; */
-	/* min-width: 20%; */
-	/* max-width: 30%; */
-	border-radius: 15px;
-	/* filter: blur(0.5rem); */
-	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
-	transition: transform 300ms, box-shadow linear 300ms;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-right: 15px;
+	margin-left: 5px;
+	/* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4); */
+	transition: transform 300ms;
 
 	display: inline-flex;
-	/* scroll-snap-align:center; */
-
-	line-height: 5px;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
 }
 
-.card-item:hover {
-	box-shadow: 5px 5px 10px 0px #1b5674;
-	transform: scale(1.1);
+.artist-view-profile {
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+	opacity: 0;
+	margin-right: 35px;
+	transition: opacity 200ms;
+}
+
+.artist-view-profile p {
+	border: 3px solid #b9d6ef;
+	background-color: #b9d6ef;
+	border-radius: 20px;
+	font-size: 20px;
+	font-family: "Poppins";
+	padding: 5px 10px 5px 10px;
+	cursor: pointer;
+	line-height: 20px;
+	text-align: center;
+}
+
+.artist-item:hover {
+	backdrop-filter: saturate(150%) blur(10px) brightness(120%);
+	transform: scale(1.01);
 	cursor: default;
 }
-
-.card-item:active {
-	background-color: #424242;
+.artist-item:hover > .artist-view-profile {
+	opacity: 100;
 }
 
-.card-image {
-	border-radius: 10px;
+.artist-item:active {
+	backdrop-filter: saturate(150%) blur(10px);
+}
+
+.artist-image {
+	border-radius: 50%;
+	min-width: 80px;
+	max-width: 120px;
+	margin: 0;
+	margin-right: 15px;
+	object-fit: contain;
+}
+
+.artist-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 10px;
+	justify-content: first baseline;
+}
+.artist-details {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 26px;
+	line-height: 10px;
+}
+
+.see-more-button {
+	border-radius: 20px;
+	position: absolute;
+	right: 0;
+	margin-top: 15px;
+	margin-right: 50px;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+
+.see-more-text {
+	border: 3px solid #b9d6ef;
+	background-color: transparent;
+	color: #b9d6ef;
+	border-radius: 25px;
+	font-size: 20px;
+	font-family: "Poppins";
+	padding-right: 10px;
+	padding-left: 10px;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+
+.see-more-button:hover > .see-more-text {
+	border: 3px solid #2e2929;
+	background-color: #b9d6ef;
+	color: #2e2929;
+}
+
+.see-more-button:active > .see-more-text {
+	border: 3px solid white;
+	background-color: rgba(91, 156, 213, 0.515);
+	color: white;
+}
+
+.list-of-albums {
+	padding: 5px;
+	scroll-snap-type: none;
+}
+
+.album-item {
+	height: 430px;
+	min-width: 5%;
+	/* max-width: 350px; */
+	border-radius: 50px;
+	transition: transform 300ms, box-shadow linear 300ms;
+	scroll-snap-align: start;
+	line-height: 5px;
+	text-align: center;
+	cursor: default;
+	padding: 10px;
+}
+
+.album-info-card {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 0;
+	overflow: hidden;
+	animation: wave-reverse 0.5s ease-in-out;
+	border-radius: 30px;
+}
+
+.album-info-card-text {
+	margin-left: 10px;
+	margin-right: 10px;
+	color: white;
+	font-family: "Poppins";
+	font-size: 20px;
+	text-align: center;
+	border-radius: 30px;
+}
+
+.album-item:hover {
+	transform: scale(1.1);
+	scroll-snap-points-x: repeat(440px);
+	scroll-snap-type: none ;
+
+	/* backdrop-filter: saturate(500%) blur(100px); */
+
+	/*margin-left: 15px;
+	margin-right: 15px;
+	padding: 10px;
+	cursor: default; */
+}
+
+.album-card:hover > .album-info-card {
+	height: fit-content;
+	transition: height 1s;
+
+	animation: wave 0.75s ease-in-out;
+	animation-fill-mode: forwards;
+	border-radius: 30px;
+}
+
+.album-image {
+	border-radius: 30px;
 	width: 100%;
 	object-fit: contain;
 }
 
-.card-name {
+.album-name {
 	color: white;
 	font-family: "Urbanist";
 	font-weight: 600;
-	font-size: 26px;
-}
-.card-sub-name {
-	color: white;
-	font-family: "Urbanist";
-	font-size: 22px;
+	font-size: 32px;
+	text-align: center;
 }
 
-.verified-badge {
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	transform: translateY(2px);
+.album-sub-name {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 26px;
+	text-align: center;
+}
+
+@keyframes wave {
+	0% {
+		height: 0;
+		overflow: hidden;
+		filter: blur(30px);
+		backdrop-filter: saturate(500%) blur(100px);
+		opacity: 0.3;
+	}
+	25% {
+		height: 50px;
+		border-radius: 50% 50% 0 0;
+	}
+	40% {
+		height: 100px;
+		border-radius: 75% 75% 0 0;
+		padding-top: 20%;
+	}
+	80% {
+		height: 75px;
+		border-radius: 50% 50% 0 0;
+	}
+	90% {
+		height: 75px;
+		border-radius: 20px 20px 0 0;
+	}
+	100% {
+		height: 75px;
+		border-radius: 30px 30px 0 0;
+		backdrop-filter: saturate(120%) blur(20px);
+	}
+}
+
+@keyframes wave-reverse {
+	0% {
+		backdrop-filter: saturate(120%) blur(20px);
+		height: fit-content;
+		border-radius: 30px 30px 0 0;
+	}
+	25% {
+		height: 100px;
+	}
+	50% {
+		height: 50px;
+	}
+	100% {
+		height: 0;
+		border-radius: 30px 30px 0 0;
+	}
+}
+
+.news-container {
+	display: flex;
+	flex-direction: row;
+	align-self: center;
+	align-items: center;
+
+	flex-wrap: nowrap;
+	scrollbar-width: none;
+	vertical-align: middle;
+}
+
+.news-card {
+	height: 400px;
+	width: 400px;
+	position: relative;
+	transform: translateX(-100px);
+}
+.news-front,
+.news-back {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 460px;
+	width: 350px;
+	border-radius: 15px;
+	/* background-color: var(--white-rgba); */
+	border: 2px solid var(--white-rgba);
+	backdrop-filter: contrast(110%) blur(30px) brightness(90%);
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	transition: 1s;
+	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.news-front {
+	flex-direction: column;
+	justify-content: center;
+}
+.news-front img {
+	/* height: 90%; */
+	width: 90%;
+	padding-top: 30px;
+	/* padding-bottom: 40px; */
+	/* border-radius: 50%; */
+	/* border: 10px solid var(--white-rgba); */
+}
+.news-details {
+	text-align: center;
+	/* font-family: "Poppins"; */
+	font-family: "Urbanist";
+	font-weight: 400;
+	color: white;
+	font-size: 26px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.news-back {
+	justify-content: space-around;
+	transform: rotateY(180deg);
+	color: white;
+	/* padding-left: 40px; */
+	/* padding-right: 40px; */
+
+	font-family: "Poppins";
+	font-size: 20px;
+	justify-content: center;
+	backdrop-filter: brightness(50%) blur(40px);
+}
+
+.news-card:hover .news-back {
+	transform: rotateY(0deg);
+}
+.news-card:hover .news-front {
+	transform: rotateY(-180deg);
 }
 
 .see-more-item {
@@ -96,8 +449,8 @@
 	margin-left: 20px;
 	background-color: #ffffff70;
 	/* min-width: 100px; */
-	min-height: 5%;
-	min-width: 5%;
+	min-height: 40px;
+	min-width: 40px;
 	border-radius: 100%;
 	box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.4);
 	transition: transform 300ms, box-shadow linear 300ms;
@@ -107,7 +460,7 @@
 }
 
 .see-more-item:hover {
-	box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+	box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.5);
 	transform: scale(1.1);
 	cursor: default;
 }
@@ -116,30 +469,4 @@
 	display: inline-block;
 	width: 100%;
 	height: 100%;
-}
-
-.artist-card {
-	position: relative;
-	overflow: hidden;
-	transition: all 0.3s ease;
-}
-
-.artist-card-info {
-	position: absolute;
-	top: 0;
-	left: 100%;
-	width: 100%;
-	height: 100%;
-	padding: 20px;
-	transition: all 0.3s ease;
-}
-.artist-card:hover .artist-card-info {
-	/* right: 20%; */
-}
-.artist-card:hover .artist-card-info {
-	left: 0;
-	/* width: 500px; */
-}
-.artist-card:hover .card-item {
-	width: 900px;
 }

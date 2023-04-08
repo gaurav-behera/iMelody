@@ -1,7 +1,10 @@
 .nav-bar {
 	margin: 0px;
 	padding: 5px;
-	background-color: rgba(0, 0, 0, 1);
+	/* background-color: rgba(0, 0, 0, 1); */
+	/* backdrop-filter: blur(10px) ; */
+	backdrop-filter: saturate(150%) blur(50px) brightness(25%);
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -115,7 +118,7 @@
 	position: absolute;
 	right: 0;
 	top: 0;
-	margin: 38px;
+	margin: 24px;
 	margin-right: 8px;
 	border-radius: 30px;
 	padding: 10px;

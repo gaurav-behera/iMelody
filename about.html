@@ -4,6 +4,7 @@
 		<title>About</title>
 		<link rel="stylesheet" href="css/index.css" />
 		<link rel="stylesheet" href="css/nav-bar.css" />
+		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -15,7 +16,58 @@
 			rel="stylesheet"
 		/>
 	</head>
-	<body style="background-image: url(../assets/about-bg.jpg)">
+	<body
+		style="
+			background-image: url(../assets/about-bg.jpg);
+			overflow-x: hidden;
+		"
+	>
+		<style>
+			.team-member {
+				padding: 100px;
+				padding-top: 50px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.team-member-img {
+				max-width: 500px;
+				max-height: 500px;
+				aspect-ratio: 1/1;
+				border-radius: 500px;
+			}
+			.team-member-name {
+				font-family: Urbanist;
+				font-size: 50px;
+				margin: 0;
+				margin-top: 20px;
+				font-weight: 600;
+			}
+			.team-member-socials {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+				margin-top: 10px;
+			}
+			.team-member-socials a {
+				margin: 10px;
+			}
+			.team-member-socials img {
+				width: 75px;
+				height: 75px;
+			}
+
+			.footer{
+				background-image: linear-gradient(
+						to bottom right,
+						black,
+						rgb(0, 28, 105)
+					);
+							}
+		</style>
 		<div class="nav-bar">
 			<a class="logo" href="index.html">
 				<img src="assets/logo.png" class="logo" />
@@ -107,7 +159,7 @@
 			</div>
 		</div>
 
-		<div class="parent" style="margin-top: 100px">
+		<div class="parent" id="#">
 			<div
 				style="
 					margin-left: -10px;
@@ -198,6 +250,7 @@
 							#d900ff,
 							rgb(25, 0, 255)
 						);
+						background-clip: text;
 						-webkit-text-fill-color: transparent;
 						-webkit-background-clip: text;
 					"
@@ -213,166 +266,139 @@
 						align-items: center;
 					"
 				>
-					<div
-						class="team-member"
-						style="
-							padding: 100px;
-							padding-top: 50px;
-							display: flex;
-							flex-direction: column;
-							justify-content: center;
-							align-items: center;
-						"
-					>
-						<img
-							src="assets/logo.png"
-							style="
-								max-width: 500px;
-								max-height: 500px;
-								aspect-ratio: 1/1;
-								border-radius: 500px;
-							"
-						/>
-						<p
-							style="
-								font-family: Urbanist;
-								font-size: 50px;
-								margin: 0;
-								margin-top: 20px;
-								font-weight: 600;
-							"
-						>
-							Gaurav Behera
-						</p>
+					<div class="team-member">
+						<img class="team-member-img" src="assets/logo.png" />
+						<p class="team-member-name">Gaurav Behera</p>
 
-						<div
-							style="
-								display: flex;
-								flex-direction: row;
-								justify-content: center;
-								align-content: center;
-								margin: 10px;
-							"
-						>
+						<div class="team-member-socials">
 							<a
-								style="margin: 10px"
 								href="https://www.linkedin.com/in/gauravbehera/"
+								target="_blank"
 							>
-								<img
-									src="assets/social-lk.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-lk.png" />
 							</a>
 							<a
-								style="margin: 10px"
 								href="https://github.com/gaurav-behera"
+								target="_blank"
 							>
-								<img
-									src="assets/social-gh.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-gh.png" />
 							</a>
 							<a
-								style="margin: 10px"
 								href="https://www.instagram.com/gaurav._29/"
+								target="_blank"
 							>
-								<img
-									src="assets/social-ig.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-ig.png" />
 							</a>
 							<a
-								style="margin: 10px"
 								href="https://www.facebook.com/people/Gaurav-Behera/100087401616398/"
+								target="_blank"
 							>
-								<img
-									src="assets/social-fb.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-fb.png" />
 							</a>
 						</div>
 					</div>
-					<div
-						class="team-member"
-						style="
-							padding: 100px;
-							padding-top: 50px;
-							display: flex;
-							flex-direction: column;
-							justify-content: center;
-							align-items: center;
-						"
-					>
-						<img
-							src="assets/logo.png"
-							style="
-								max-width: 500px;
-								max-height: 500px;
-								aspect-ratio: 1/1;
-								border-radius: 500px;
-							"
-						/>
-						<p
-							style="
-								font-family: Urbanist;
-								font-size: 50px;
-								margin: 0;
-								margin-top: 20px;
-								font-weight: 600;
-							"
-						>
-							Amey Karan
-						</p>
+					<div class="team-member">
+						<img class="team-member-img" src="assets/logo.png" />
+						<p class="team-member-name">Amey Karan</p>
 
-						<div
-							style="
-								display: flex;
-								flex-direction: row;
-								justify-content: center;
-								align-content: center;
-								margin: 10px;
-							"
-						>
+						<div class="team-member-socials">
 							<a
-								style="margin: 10px"
 								href="https://www.linkedin.com/in/ameykaran/"
+								target="_blank"
 							>
-								<img
-									src="assets/social-lk.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-lk.png" />
 							</a>
 							<a
-								style="margin: 10px"
 								href="https://github.com/ameykaran"
+								target="_blank"
 							>
-								<img
-									src="assets/social-gh.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-gh.png" />
 							</a>
 							<a
-								style="margin: 10px"
 								href="https://www.instagram.com/amey_karan"
+								target="_blank"
 							>
-								<img
-									src="assets/social-ig.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-ig.png" />
 							</a>
 							<a
-								style="margin: 10px"
 								href="https://www.facebook.com/ameykaran09/"
+								target="_blank"
 							>
-								<img
-									src="assets/social-fb.png"
-									style="width: 75px; height: 75px"
-								/>
+								<img src="assets/social-fb.png" />
 							</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="assets/logo.png" />
+					<p class="footer-tagline">Your song guide</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="about.html">About</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="artists.html">Artists</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="sitemap.html">Sitemap</a>
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="tnc.html">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy.html">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie.html">Cookie Policy</a>
+					</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@imelody.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-fb-white.png"
+							/>
+						</a>
+						<a href="https://instagram.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-ig-white.png"
+							/>
+						</a>
+						<a href="https://twitter.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-tw-white.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 iMelody. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>

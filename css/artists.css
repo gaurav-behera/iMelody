@@ -8,12 +8,12 @@
 	color: white;
 }
 
-.grid-subtitle{
-    font-family: "Poppins";
+.grid-subtitle {
+	font-family: "Poppins";
 	font-weight: 300;
 	font-size: 30px;
-    font-style: italic;
-    line-height: 10px;
+	font-style: italic;
+	line-height: 10px;
 	margin: 0px;
 	margin-bottom: 10px;
 	max-width: 1900px;
@@ -42,48 +42,52 @@
 	margin-left: 20px;
 	margin-right: 20px;
 	margin-top: 10px;
-    /* margin-bottom:30px; */
-    height:300px;
+	/* margin-bottom:30px; */
+	height: 300px;
 
 	min-width: 5%;
 	border-radius: 15px;
 	/* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4); */
 	/* transition: transform 600ms, box-shadow linear 300ms; */
 
-    text-align: center;
+	text-align: center;
 }
 
-
 .artist-image {
-    border-radius: 50%;
+	border-radius: 50%;
 	box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
 	width: 80%;
-    object-fit: contain;
+	object-fit: contain;
 	transition: transform 400ms ease-in-out, border-radius 400ms, width 400ms;
 }
 
 .artist-name {
-    color: white;
+	color: white;
 	font-family: "Urbanist";
-    position: absolute;
+	position: absolute;
 	font-weight: 600;
 	font-size: 30px;
-    left: 50%;
-    transform: translate(-50%);
+	left: 50%;
+	transform: translate(-50%);
 	transition: transform 400ms, font-size 400ms;
-    pointer-events: none;
+	pointer-events: none;
 }
 
+.artist-name p {
+	margin: 0;
+	padding: 0;
+	margin-top: 20px;
+}
 .artist-image:hover {
-    transform: scale(1.05);
-    border-radius: 10px;
-    width: 100%;
-    object-fit: cover;
-    cursor: default;
+	transform: scale(1.05);
+	border-radius: 10px;
+	width: 100%;
+	object-fit: cover;
+	cursor: pointer;
 	box-shadow: 0px 0px 20px 3px rgba(50, 50, 50, 0.7);
 }
 
-.artist-image:hover + .artist-name{
-    transform: translate(-50%, -80%);
+.artist-image:hover + .artist-name {
+	transform: translate(-50%, -110%);
 	font-size: 50px;
 }

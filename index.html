@@ -20,12 +20,16 @@
 
 	<body
 		style="
+			background-color: black;
 			background-image: linear-gradient(
-				to bottom right,
-				black,
-				rgb(0, 28, 105)
-			);
-			height: 190vh;
+					to bottom right,
+					rgb(0, 0, 0),
+					rgba(0, 0, 0, 0.2)
+				),
+				url(../assets/background.jpeg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
 		"
 	>
 		<div class="nav-bar">
@@ -119,68 +123,339 @@
 			</div>
 		</div>
 
-		<div>
-			<div style="padding-left: 0.5%; margin-top: 150px">
-				<div style="display: flex; align-items: center">
-					<p class="list-of-cards-title">TOP TRENDING SONGS</p>
+		<div style="margin-top: 70px; display: flex; flex-direction: row">
+			<div class="vertical-items-div">
+				<div>
+					<p class="list-of-items-title" style="padding-left: 30px">
+						LATEST SONG RELEASES
+					</p>
 				</div>
-				<div class="list-of-cards">
-					<div class="card-item">
-						<div style="width: 100%">
+				<div class="horizontal-items-div">
+					<div class="song-item">
+						<div class="song-image">
 							<img
-								src="song-cover/song1.png"
-								class="card-image"
+								src="../song-cover/song1.png"
+								style="border-radius: 30px"
+								height="350px"
+								width="350px"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-sub-name">Ed Sheeran</p>
+						</div>
+						<div class="song-name">
+							<p>Shape Of You</p>
+						</div>
+						<div class="song-artist">
+							<p>Ed Sheeran</p>
 						</div>
 					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
+					<div class="song-item">
+						<div class="song-image">
 							<img
-								src="song-cover/song1.png"
-								class="card-image"
+								src="../song-cover/song1.png"
+								style="border-radius: 30px"
+								height="350px"
+								width="350px"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-sub-name">Ed Sheeran</p>
+						</div>
+						<div class="song-name">
+							<p>Shape Of You</p>
+						</div>
+						<div class="song-artist">
+							<p>Ed Sheeran</p>
 						</div>
 					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
+					<div class="song-item">
+						<div class="song-image">
 							<img
-								src="song-cover/song1.png"
-								class="card-image"
+								src="../song-cover/song1.png"
+								style="border-radius: 30px"
+								height="350px"
+								width="350px"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-sub-name">Ed Sheeran</p>
+						</div>
+						<div class="song-name">
+							<p>Shape Of You</p>
+						</div>
+						<div class="song-artist">
+							<p>Ed Sheeran</p>
 						</div>
 					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
+					<div class="song-item">
+						<div class="song-image">
 							<img
-								src="song-cover/song1.png"
-								class="card-image"
+								src="../song-cover/song1.png"
+								style="border-radius: 30px"
+								height="350px"
+								width="350px"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-sub-name">Ed Sheeran</p>
+						</div>
+						<div class="song-name">
+							<p>Shape Of You</p>
+						</div>
+						<div class="song-artist">
+							<p>Ed Sheeran</p>
 						</div>
 					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
+					<div class="song-item">
+						<div class="song-image">
 							<img
-								src="song-cover/song1.png"
-								class="card-image"
+								src="../song-cover/song1.png"
+								style="border-radius: 30px"
+								height="350px"
+								width="350px"
 							/>
-							<p class="card-name">Shape of You</p>
-							<p class="card-sub-name">Ed Sheeran</p>
+						</div>
+						<div class="song-name">
+							<p>Shape Of You</p>
+						</div>
+						<div class="song-artist">
+							<p>Ed Sheeran</p>
 						</div>
 					</div>
+				</div>
 
-					<div class="see-more-item">
+				<div>
+					<div>
+						<p
+							class="list-of-items-title"
+							style="padding-left: 30px"
+						>
+							TRENDING ALBUMS
+						</p>
+					</div>
+					<div class="horizontal-items-div list-of-albums" style="display: flex">
+						<div style="padding: 20px; width: 450px">
+							<a href="album1.html" style="text-decoration: none">
+								<div class="album-item" style="width: 350px">
+									<div style="width: 100%">
+										<div
+											style="position: relative"
+											class="album-card"
+										>
+											<img
+												src="../album-cover/album1.jpg"
+												class="album-image"
+											/>
+											<div class="album-info-card">
+												<p class="album-info-card-text">
+													24 songs &#8211; 2021
+												</p>
+												<p class="album-info-card-text">
+													1h 24m
+												</p>
+											</div>
+										</div>
+										<p class="album-name">Human</p>
+										<p class="album-sub-name">
+											One Republic
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div style="padding: 20px; width: 450px">
+							<a href="album1.html" style="text-decoration: none">
+								<div class="album-item" style="width: 350px">
+									<div style="width: 100%">
+										<div
+											style="position: relative"
+											class="album-card"
+										>
+											<img
+												src="../album-cover/album1.jpg"
+												class="album-image"
+											/>
+											<div class="album-info-card">
+												<p class="album-info-card-text">
+													24 songs &#8211; 2021
+												</p>
+												<p class="album-info-card-text">
+													1h 24m
+												</p>
+											</div>
+										</div>
+										<p class="album-name">Human</p>
+										<p class="album-sub-name">
+											One Republic
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div style="padding: 20px; width: 450px">
+							<a href="album1.html" style="text-decoration: none">
+								<div class="album-item" style="width: 350px">
+									<div style="width: 100%">
+										<div
+											style="position: relative"
+											class="album-card"
+										>
+											<img
+												src="../album-cover/album1.jpg"
+												class="album-image"
+											/>
+											<div class="album-info-card">
+												<p class="album-info-card-text">
+													24 songs &#8211; 2021
+												</p>
+												<p class="album-info-card-text">
+													1h 24m
+												</p>
+											</div>
+										</div>
+										<p class="album-name">Human</p>
+										<p class="album-sub-name">
+											One Republic
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div style="padding: 20px; width: 450px">
+							<a href="album1.html" style="text-decoration: none">
+								<div class="album-item" style="width: 350px">
+									<div style="width: 100%">
+										<div
+											style="position: relative"
+											class="album-card"
+										>
+											<img
+												src="../album-cover/album1.jpg"
+												class="album-image"
+											/>
+											<div class="album-info-card">
+												<p class="album-info-card-text">
+													24 songs &#8211; 2021
+												</p>
+												<p class="album-info-card-text">
+													1h 24m
+												</p>
+											</div>
+										</div>
+										<p class="album-name">Human</p>
+										<p class="album-sub-name">
+											One Republic
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div style="padding: 20px; width: 450px">
+							<a href="album1.html" style="text-decoration: none">
+								<div class="album-item" style="width: 350px">
+									<div style="width: 100%">
+										<div
+											style="position: relative"
+											class="album-card"
+										>
+											<img
+												src="../album-cover/album1.jpg"
+												class="album-image"
+											/>
+											<div class="album-info-card">
+												<p class="album-info-card-text">
+													24 songs &#8211; 2021
+												</p>
+												<p class="album-info-card-text">
+													1h 24m
+												</p>
+											</div>
+										</div>
+										<p class="album-name">Human</p>
+										<p class="album-sub-name">
+											One Republic
+										</p>
+									</div>
+								</div>
+							</a>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div style="width: 32%; padding-left: 50px; padding-top: 50px;">
+				<div>
+					<p class="list-of-items-title" style="padding-bottom: 40px">
+						RECENT NEWS
+					</p>
+				</div>
+				<div class="news-container">
+					<div class="see-more-item" style=" transform: translateX(90px); z-index: 4;">
+						<div style="width: 100%;">
+							<span>
+								<img
+									class="see-more-arrow"
+									src="assets/arrow.svg"
+									style="transform: scaleX(-1)"
+								/>
+							</span>
+						</div>
+					</div>
+					<div
+						class="news-card"
+						style="
+							pointer-events: none;
+							transform: translate(0px, 0px);
+							filter: brightness(40%);
+							height: 250px;
+						"
+					>
+						<div
+							class="news-front"
+							style="height: 300px; width: 250px"
+						>
+							<img src="artist-cover/artist1.jpeg" />
+							<div class="news-details">
+								<p>
+									Alan Walker releases new song Dreamer with
+									NCS
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="news-card" style="z-index: 3">
+						<div class="news-front">
+							<img src="artist-cover/artist1.jpeg" />
+							<div class="news-details">
+								<p>
+									Alan Walker returns with an ode to his day
+									one supporters
+								</p>
+							</div>
+						</div>
+						<div class="news-back">
+							<p style="padding: 30px; justify-self: end">
+								In response to his fans, Alan Walker serves a
+								heavy dose of nostalgia with his first single of
+								2023 - Dreamer. Released on label NCS, “Dreamer”
+								pays homage to the early years of his career
+								after he dropped his hit single - “Faded”
+							</p>
+						</div>
+					</div>
+					<div
+						class="news-card"
+						style="
+							pointer-events: none;
+							transform: translate(-100px, 0px);
+							filter: brightness(40%);
+							height: 250px;
+						"
+					>
+						<div
+							class="news-front"
+							style="height: 300px; width: 250px"
+						>
+							<img src="artist-cover/artist1.jpeg" />
+							<div class="news-details">
+								<p>
+									Alan Walker releases new song Dreamer with
+									NCS
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="see-more-item"  style=" transform: translateX(-90px); z-index: 4;">
 						<div style="width: 100%">
 							<span>
 								<img
@@ -192,261 +467,140 @@
 					</div>
 				</div>
 
-				<div style="display: flex; align-items: center">
-					<p class="list-of-cards-title">TOP TRENDING ALBUMS</p>
+				<div style="display: flex; flex-direction: row; padding-top: 100px;">
+					<p class="list-of-items-title">
+						TRENDING ARTISTS
+					</p>
+					<a href="artists.html">
+						<div class="see-more-button">
+							<p class="see-more-text">SEE MORE</p>
+						</div>
+					</a>
 				</div>
-				<div class="list-of-cards">
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="album-cover/album1.jpg"
-								class="card-image"
-							/>
-							<p class="card-name">Human</p>
-							<p class="card-sub-name">One Republic</p>
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="album-cover/album1.jpg"
-								class="card-image"
-							/>
-							<p class="card-name">Human</p>
-							<p class="card-sub-name">One Republic</p>
-						</div>
-					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="album-cover/album1.jpg"
-								class="card-image"
-							/>
-							<p class="card-name">Human</p>
-							<p class="card-sub-name">One Republic</p>
-						</div>
-					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="album-cover/album1.jpg"
-								class="card-image"
-							/>
-							<p class="card-name">Human</p>
-							<p class="card-sub-name">One Republic</p>
-						</div>
-					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="album-cover/album1.jpg"
-								class="card-image"
-							/>
-							<p class="card-name">Human</p>
-							<p class="card-sub-name">One Republic</p>
-						</div>
-					</div>
-
-					<div class="see-more-item">
-						<div style="width: 100%">
-							<span>
+				<div class="list-of-artists">
+					<a href="artist1.html" style="margin: 0; padding: 0">
+						<div class="artist-item" style="width: 100%">
+							<div>
 								<img
-									class="see-more-arrow"
-									src="assets/arrow.svg"
+									src="../artist-cover/artist1.jpeg"
+									class="artist-image"
 								/>
-							</span>
+							</div>
+
+							<div
+								style="
+									width: 20%;
+									max-width: 300px;
+									min-width: 250px;
+								"
+							>
+								<p class="artist-name">Marshmellow</p>
+								<p class="artist-details">245K Followers</p>
+							</div>
+							<div class="artist-view-profile">
+								<p>View<br />Profile</p>
+							</div>
 						</div>
-					</div>
+					</a>
+					<a href="artist1.html" style="margin: 0; padding: 0">
+						<div class="artist-item" style="width: 100%">
+							<div>
+								<img
+									src="../artist-cover/artist1.jpeg"
+									class="artist-image"
+								/>
+							</div>
+
+							<div
+								style="
+									width: 20%;
+									max-width: 300px;
+									min-width: 250px;
+								"
+							>
+								<p class="artist-name">Marshmellow</p>
+								<p class="artist-details">245K Followers</p>
+							</div>
+							<div class="artist-view-profile">
+								<p>View<br />Profile</p>
+							</div>
+						</div>
+					</a>
+					<a href="artist1.html" style="margin: 0; padding: 0">
+						<div class="artist-item" style="width: 100%">
+							<div>
+								<img
+									src="../artist-cover/artist1.jpeg"
+									class="artist-image"
+								/>
+							</div>
+
+							<div
+								style="
+									width: 20%;
+									max-width: 300px;
+									min-width: 250px;
+								"
+							>
+								<p class="artist-name">Marshmellow</p>
+								<p class="artist-details">245K Followers</p>
+							</div>
+							<div class="artist-view-profile">
+								<p>View<br />Profile</p>
+							</div>
+						</div>
+					</a>
+					<a href="artist1.html" style="margin: 0; padding: 0">
+						<div class="artist-item" style="width: 100%">
+							<div>
+								<img
+									src="../artist-cover/artist1.jpeg"
+									class="artist-image"
+								/>
+							</div>
+
+							<div
+								style="
+									width: 20%;
+									max-width: 300px;
+									min-width: 250px;
+								"
+							>
+								<p class="artist-name">Marshmellow</p>
+								<p class="artist-details">245K Followers</p>
+							</div>
+							<div class="artist-view-profile">
+								<p>View<br />Profile</p>
+							</div>
+						</div>
+					</a>
+					<a href="artist1.html" style="margin: 0; padding: 0">
+						<div class="artist-item" style="width: 100%">
+							<div>
+								<img
+									src="../artist-cover/artist1.jpeg"
+									class="artist-image"
+								/>
+							</div>
+
+							<div
+								style="
+									width: 20%;
+									max-width: 300px;
+									min-width: 250px;
+								"
+							>
+								<p class="artist-name">Marshmellow</p>
+								<p class="artist-details">245K Followers</p>
+							</div>
+							<div class="artist-view-profile">
+								<p>View<br />Profile</p>
+							</div>
+						</div>
+					</a>
 				</div>
+				<div class="bottom-gradient"></div>
 
-				<div style="display: flex; align-items: center">
-					<p class="list-of-cards-title">TOP TRENDING ARTISTS</p>
-				</div>
-				<div class="list-of-cards">
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span>
-						</div>
-					</div>
-
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<!-- <span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span> -->
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<!-- <span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span> -->
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<!-- <span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span> -->
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<!-- <span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span> -->
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<!-- <span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span> -->
-						</div>
-					</div>
-				</div>
-
-				<div style="display: flex; align-items: center; height: 300px">
-					<p class="list-of-cards-title">TOP TRENDING ARTISTS</p>
-				</div>
-				<div class="list-of-cards">
-					<div class="card-item artist-card">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image artist-card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span>
-							<div class="artist-card-info">
-								<p class="card-name">Card Name</p>
-								<p class="card-sub-name" style="line-height: normal;">This is some information about the card</div>
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span>
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span>
-						</div>
-					</div>
-					<div class="card-item">
-						<div style="width: 100%">
-							<img
-								src="artist-cover/artist1.jpeg"
-								class="card-image"
-							/>
-							<p class="card-name" style="display: inline-block">
-								Marshmellow
-							</p>
-							<span>
-								<img
-									class="verified-badge"
-									src="assets/verified.svg"
-								/>
-							</span>
-						</div>
-					</div>
-				</div>
 			</div>
 		</div>
 
@@ -458,15 +612,27 @@
 				</div>
 
 				<div class="footer-section">
-					<p class="footer-section-mid-item">About</p>
-					<p class="footer-section-mid-item">Artists</p>
-					<p class="footer-section-mid-item">Sitemap</p>
+					<p class="footer-section-mid-item">
+						<a href="about.html">About</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="artists.html">Artists</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="sitemap.html">Sitemap</a>
+					</p>
 				</div>
 
 				<div class="footer-section">
-					<p class="footer-section-mid-item">Terms and conditions</p>
-					<p class="footer-section-mid-item">Privacy Policy</p>
-					<p class="footer-section-mid-item">Cookie Policy</p>
+					<p class="footer-section-mid-item">
+						<a href="tnc.html">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy.html">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie.html">Cookie Policy</a>
+					</p>
 				</div>
 
 				<div class="footer-section footer-section4">
@@ -474,21 +640,31 @@
 						<p class="footer-section4-title">
 							Let us know your thoughts!
 						</p>
-						<p class="footer-section4-contact">hello@imelody.com</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@imelody.com</a
+							>
+						</p>
 					</div>
 					<div class="footer-socials">
-						<img
-							class="footer-socials-item"
-							src="assets/social-fb-white.png"
-						/>
-						<img
-							class="footer-socials-item"
-							src="assets/social-ig-white.png"
-						/>
-						<img
-							class="footer-socials-item"
-							src="assets/social-tw-white.png"
-						/>
+						<a href="https://facebook.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-fb-white.png"
+							/>
+						</a>
+						<a href="https://instagram.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-ig-white.png"
+							/>
+						</a>
+						<a href="https://twitter.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-tw-white.png"
+							/>
+						</a>
 					</div>
 				</div>
 			</div>

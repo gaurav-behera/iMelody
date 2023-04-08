@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html style="background-color: black">
+<html>
 	<head>
 		<meta charset="UTF-8" />
 		<title>Artists</title>
 		<link rel="stylesheet" href="css/nav-bar.css" />
 		<link rel="stylesheet" href="css/artists.css" />
+		<link rel="stylesheet" href="css/footer.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -17,17 +18,18 @@
 		/>
 	</head>
 	<body
-	style="
-	background-image: linear-gradient(
-			to bottom right,
-			rgb(0, 0, 0),
-			rgba(0, 0, 0, 0.2)
-		),
-		url(./assets/background.jpeg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-"
+		style="
+			background-color: black;
+			background-image: linear-gradient(
+					to bottom right,
+					rgb(0, 0, 0),
+					rgba(0, 0, 0, 0.2)
+				),
+				url(./assets/background.jpeg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+		"
 	>
 		<div class="nav-bar">
 			<a class="logo" href="index.html">
@@ -121,12 +123,25 @@
 		</div>
 
 		<div>
-			<div style="padding-left: 0.5%; margin-top: 120px; height:100vh">
-                <div style="padding-left: 60px;">
+			<div style="padding-left: 0.5%; margin-top: 120px; height: 100vh">
+				<div style="padding-left: 60px">
 					<p class="grid-title">ARTISTS</p>
-                    <p class="grid-subtitle">Get hooked on these Amazing Music Artists!</p>
+					<p class="grid-subtitle">
+						Get hooked on these Amazing Music Artists!
+					</p>
 				</div>
 				<div class="grid-of-artists">
+					<a href="artist1.html" style="cursor: default">
+						<div class="artist-card">
+							<img
+								src="artist-cover/artist1.jpeg"
+								class="artist-image"
+							/>
+							<div class="artist-name">
+								<p>Marshmellow</p>
+							</div>
+						</div>
+					</a>
 					<div class="artist-card">
 						<img
 							src="artist-cover/artist1.jpeg"
@@ -136,7 +151,7 @@
 							<p>Marshmellow</p>
 						</div>
 					</div>
-                    <div class="artist-card">
+					<div class="artist-card">
 						<img
 							src="artist-cover/artist1.jpeg"
 							class="artist-image"
@@ -145,7 +160,7 @@
 							<p>Marshmellow</p>
 						</div>
 					</div>
-                    <div class="artist-card">
+					<div class="artist-card">
 						<img
 							src="artist-cover/artist1.jpeg"
 							class="artist-image"
@@ -154,7 +169,7 @@
 							<p>Marshmellow</p>
 						</div>
 					</div>
-                    <div class="artist-card">
+					<div class="artist-card">
 						<img
 							src="artist-cover/artist1.jpeg"
 							class="artist-image"
@@ -163,7 +178,7 @@
 							<p>Marshmellow</p>
 						</div>
 					</div>
-                    <div class="artist-card">
+					<div class="artist-card">
 						<img
 							src="artist-cover/artist1.jpeg"
 							class="artist-image"
@@ -172,16 +187,7 @@
 							<p>Marshmellow</p>
 						</div>
 					</div>
-                    <div class="artist-card">
-						<img
-							src="artist-cover/artist1.jpeg"
-							class="artist-image"
-						/>
-						<div class="artist-name">
-							<p>Marshmellow</p>
-						</div>
-					</div>
-                    <div class="artist-card">
+					<div class="artist-card">
 						<img
 							src="artist-cover/artist1.jpeg"
 							class="artist-image"
@@ -193,5 +199,74 @@
 				</div>
 			</div>
 		</div>
+		<footer class="footer">
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="assets/logo.png" />
+					<p class="footer-tagline">Your song guide</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="about.html">About</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="artists.html">Artists</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="sitemap.html">Sitemap</a>
+					</p>
+				</div>
+
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="tnc.html">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="privacy.html">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="cookie.html">Cookie Policy</a>
+					</p>
+				</div>
+
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@imelody.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-fb-white.png"
+							/>
+						</a>
+						<a href="https://instagram.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-ig-white.png"
+							/>
+						</a>
+						<a href="https://twitter.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="assets/social-tw-white.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-copyright">
+				<p>© 2023 iMelody. All rights reserved.</p>
+			</div>
+		</footer>
 	</body>
 </html>
