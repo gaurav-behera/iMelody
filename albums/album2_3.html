@@ -3,9 +3,9 @@
   <head>
     <!-- <script src="reloadScript.js"></script> -->
     <title>Native | iMelody</title>
-    <link rel="stylesheet" href="css/nav-bar.css" />
-    <link rel="stylesheet" href="css/album.css" />
-    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="../css/nav-bar.css" />
+    <link rel="stylesheet" href="../css/album.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,89 +26,107 @@
           rgb(0, 0, 0),
           rgba(0, 0, 0, 0.2)
         ),
-        url(./assets/background.jpeg);
+        url(../assets/background.jpeg);
       background-repeat: no-repeat;
       background-attachment: fixed;
       background-size: cover;
     "
   >
-    <div class="nav-bar">
-      <a class="logo" href="index.html">
-        <img src="assets/logo.png" class="logo" />
-      </a>
+ 	<div class="nav-bar">
+			<a class="logo" href="../index.html">
+				<img src="../assets/logo.png" class="logo" />
+			</a>
 
-      <div style="display: flex; justify-content: end; width: 100%">
-        <div class="nav-bar-options">
-          <div class="nav-bar-search">
-            <input
-              type="text"
-              class="nav-bar-search-input"
-              placeholder="Search"
-            />
-            <img
-              src="assets/search.svg"
-              class="nav-bar-search-icon"
-              class="nav-bar-search-icon"
-            />
-          </div>
-          <button class="nav-bar-item">
-            <a href="about.html">About</a>
-          </button>
-          <button class="nav-bar-item">
-            <a href="artists.html">Artists</a>
-          </button>
-          <div class="profile-logo">
-            <img class="profile-logo-image" src="album-cover/album1.jpg" />
-          </div>
+			<div style="display: flex; justify-content: end; width: 100%">
+				<div class="nav-bar-options">
+					<div class="nav-bar-search">
+						<input
+							type="text"
+							class="nav-bar-search-input"
+							placeholder="Search"
+						/>
+						<img
+							src="../assets/search.svg"
+							class="nav-bar-search-icon"
+							class="nav-bar-search-icon"
+						/>
+					</div>
+					<button class="nav-bar-item">
+						<a href="../about.html">About</a>
+					</button>
+					<button class="nav-bar-item">
+						<a href="../artists.html">Artists</a>
+					</button>
+					<div class="profile-logo">
+						<img
+							class="profile-logo-image"
+							src="../assets/user.jpg"
+						/>
+					</div>
 
-          <div class="profile-details">
-            <p class="profile-name">User Demo</p>
-            <p
-              style="
-                display: inline;
-                color: black;
-                margin-top: 5px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                font-size: 23px;
-                margin-right: 0px;
-              "
-            >
-              <b> @ </b>
-            </p>
-            <p class="profile-username" style="display: inline">username</p>
-            <hr style="margin-top: 5px; border: 1px solid black" />
-            <div>
-              <p class="profile-options profile-liked-songs">
-                <img
-                  src="assets/liked.svg"
-                  style="width: 20px; height: 20px; vertical-align: middle"
-                />
-                Your liked songs
-              </p>
-            </div>
-            <p class="profile-options">
-              <img
-                src="assets/manage-account.svg"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
-              Manage your account
-            </p>
-            <p class="profile-options">
-              <img
-                src="assets/logout.svg"
-                style="width: 20px; height: 20px; vertical-align: middle"
-              />
-              Logout
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+					<div class="profile-details">
+						<p class="profile-name">User Demo</p>
+						<p
+							style="
+								display: inline;
+								color: black;
+								margin-top: 5px;
+								font-family: 'Segoe UI', Tahoma, Geneva, Verdana,
+									sans-serif;
+								font-size: 23px;
+								margin-right: 0px;
+							"
+						>
+							<b> @ </b>
+						</p>
+						<p class="profile-username" style="display: inline">
+							username
+						</p>
+						<hr style="margin-top: 5px; border: 1px solid black" />
+						<div>
+							<p class="profile-options profile-liked-songs">
+								<img
+									src="../assets/liked.svg"
+									style="
+										width: 20px;
+										height: 20px;
+										vertical-align: middle;
+									"
+								/>
+								Your liked songs
+							</p>
+						</div>
+						<p class="profile-options">
+							<img
+								src="../assets/manage-account.svg"
+								style="
+									width: 20px;
+									height: 20px;
+									vertical-align: middle;
+								"
+							/>
+							Manage your account
+						</p>
+						<p class="profile-options">
+							<img
+								src="../assets/logout.svg"
+								style="
+									width: 20px;
+									height: 20px;
+									vertical-align: middle;
+								"
+							/>
+							Logout
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <div style="margin-top: 150px; display: flex; flex-direction: row">
       <div style="width: 700px; padding-top: 45px">
         <div style="display: flex; justify-content: center">
-          <img class="album-cover" src="album-cover/album1.jpg" />
+          <img class="album-cover" src="../album-cover/album2_3.png" />
         </div>
         <div class="album-details">
           <p class="album-name">Native</p>
@@ -122,73 +140,630 @@
           <p class="list-of-songs-title">SONGS</p>
           <p class="album-duration">Total Duration - 55min</p>
         </div>
-        <div class="list-of-songs">%@#SONG_CODE#@%</div>
+        <div class="list-of-songs"><div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Counting Stars </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:17</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">If I Lose Myself </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:01</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Feel Again </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 3:05</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">What You Wanted </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:01</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">I Lived </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 3:55</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Light It Up </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:10</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Can't Stop </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:09</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Au Revoir </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:34</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Burning Bridges </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:17</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Something I Need </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:01</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Preacher </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:08</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+<div class="song-item">
+  <div>
+    <img
+      src="../album-cover/album2_3.png"
+      class="song-image"
+    />
+  </div>
+
+  <div style="width: 20%; max-width: 300px; min-width: 250px">
+    <p class="song-name">Don't Look Down </p>
+    <p class="song-artist">OneRepublic</p>
+  </div>
+  <div style="width: 20%; max-width: 200px; min-width: 150px">
+    <button class="song-genre">Pop</button>
+  </div>
+  <div style="width: 20%; max-width: 250px; min-width: 200px">
+    <p class="song-artist"> 4:09</p>
+  </div>
+
+  <div
+    style="
+      display: flex;
+      flex-direction: row;
+      width: 20%;
+      margin-left: 30px;
+      max-width: 200px;
+      min-width: 100px;
+    "
+  >
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-full.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-half.svg" />
+    </div>
+    <div class="rating-star">
+      <img src="../assets/star-empty.svg" />
+    </div>
+  </div>
+</div>
+</div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer-main">
-        <div class="footer-section footer-section1">
-          <img class="footer-logo" src="assets/logo.png" />
-          <p class="footer-tagline">Your song guide</p>
-        </div>
+  	<footer class="footer">
+			<div class="footer-main">
+				<div class="footer-section footer-section1">
+					<img class="footer-logo" src="../assets/logo.png" />
+					<p class="footer-tagline">Your song guide</p>
+				</div>
 
-        <div class="footer-section">
-          <p class="footer-section-mid-item">
-            <a href="about.html">About</a>
-          </p>
-          <p class="footer-section-mid-item">
-            <a href="artists.html">Artists</a>
-          </p>
-          <p class="footer-section-mid-item">
-            <a href="sitemap.html">Sitemap</a>
-          </p>
-        </div>
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="../about.html">About</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="../artists.html">Artists</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="../sitemap.html">Sitemap</a>
+					</p>
+				</div>
 
-        <div class="footer-section">
-          <p class="footer-section-mid-item">
-            <a href="tnc.html">Terms and conditions</a>
-          </p>
-          <p class="footer-section-mid-item">
-            <a href="privacy.html">Privacy Policy</a>
-          </p>
-          <p class="footer-section-mid-item">
-            <a href="cookie.html">Cookie Policy</a>
-          </p>
-        </div>
+				<div class="footer-section">
+					<p class="footer-section-mid-item">
+						<a href="../tnc.html">Terms and conditions</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="../privacy.html">Privacy Policy</a>
+					</p>
+					<p class="footer-section-mid-item">
+						<a href="../cookie.html">Cookie Policy</a>
+					</p>
+				</div>
 
-        <div class="footer-section footer-section4">
-          <div class="footer-section4-text">
-            <p class="footer-section4-title">Let us know your thoughts!</p>
-            <p class="footer-section4-contact">
-              <a href="mailto://hello@imelody.com">hello@imelody.com</a>
-            </p>
-          </div>
-          <div class="footer-socials">
-            <a href="https://facebook.com/imelody" target="_blank">
-              <img
-                class="footer-socials-item"
-                src="assets/social-fb-white.png"
-              />
-            </a>
-            <a href="https://instagram.com/imelody" target="_blank">
-              <img
-                class="footer-socials-item"
-                src="assets/social-ig-white.png"
-              />
-            </a>
-            <a href="https://twitter.com/imelody" target="_blank">
-              <img
-                class="footer-socials-item"
-                src="assets/social-tw-white.png"
-              />
-            </a>
-          </div>
-        </div>
-      </div>
+				<div class="footer-section footer-section4">
+					<div class="footer-section4-text">
+						<p class="footer-section4-title">
+							Let us know your thoughts!
+						</p>
+						<p class="footer-section4-contact">
+							<a href="mailto://hello@imelody.com"
+								>hello@imelody.com</a
+							>
+						</p>
+					</div>
+					<div class="footer-socials">
+						<a href="https://facebook.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../assets/social-fb-white.png"
+							/>
+						</a>
+						<a href="https://instagram.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../assets/social-ig-white.png"
+							/>
+						</a>
+						<a href="https://twitter.com/imelody" target="_blank">
+							<img
+								class="footer-socials-item"
+								src="../assets/social-tw-white.png"
+							/>
+						</a>
+					</div>
+				</div>
+			</div>
 
-      <div class="footer-copyright">
-        <p>© 2023 iMelody. All rights reserved.</p>
-      </div>
-    </footer>
+			<div class="footer-copyright">
+				<p>© 2023 iMelody. All rights reserved.</p>
+			</div>
+		</footer>
+
   </body>
 </html>

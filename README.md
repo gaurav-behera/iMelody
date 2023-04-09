@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/uO3FBJhb)
 
 ## Introduction
 
@@ -41,17 +42,108 @@ Add a file structure here with the basic details about files, below is an exampl
 
 ```
 .
-├── README.md
+├── ASSUMPTIONS.md
 ├── about.html
 ├── album-cover
-│   └── album1.jpg
-├── album1.html
+│   ├── album1_1.png
+│   ├── album1_2.png
+│   ├── album1_3.png
+│   ├── album1_4.png
+│   ├── album1_5.png
+│   ├── album2_1.png
+│   ├── album2_2.png
+│   ├── album2_3.png
+│   ├── album2_4.png
+│   ├── album2_5.png
+│   ├── album3_1.png
+│   ├── album3_2.png
+│   ├── album3_3.png
+│   ├── album3_4.png
+│   ├── album3_5.png
+│   ├── album4_1.png
+│   ├── album4_2.png
+│   ├── album4_3.png
+│   ├── album4_4.png
+│   ├── album4_5.png
+│   ├── album5_1.png
+│   ├── album5_2.png
+│   ├── album5_3.png
+│   ├── album5_4.png
+│   └── album5_5.png
+├── albums
+│   ├── album1_1.html
+│   ├── album1_2.html
+│   ├── album1_3.html
+│   ├── album1_4.html
+│   ├── album1_5.html
+│   ├── album2_1.html
+│   ├── album2_2.html
+│   ├── album2_3.html
+│   ├── album2_4.html
+│   ├── album2_5.html
+│   ├── album3_1.html
+│   ├── album3_2.html
+│   ├── album3_3.html
+│   ├── album3_4.html
+│   ├── album3_5.html
+│   ├── album4_1.html
+│   ├── album4_2.html
+│   ├── album4_3.html
+│   ├── album4_4.html
+│   ├── album4_5.html
+│   ├── album5_1.html
+│   ├── album5_2.html
+│   ├── album5_3.html
+│   ├── album5_4.html
+│   ├── album5_5.html
+│   ├── song1_1.html
+│   ├── song1_2.html
+│   ├── song1_3.html
+│   ├── song1_4.html
+│   ├── song1_5.html
+│   ├── song2_1.html
+│   ├── song2_2.html
+│   ├── song2_3.html
+│   ├── song2_4.html
+│   ├── song2_5.html
+│   ├── song3_1.html
+│   ├── song3_2.html
+│   ├── song3_3.html
+│   ├── song3_4.html
+│   ├── song3_5.html
+│   ├── song4_1.html
+│   ├── song4_2.html
+│   ├── song4_3.html
+│   ├── song4_4.html
+│   ├── song4_5.html
+│   ├── song5_1.html
+│   ├── song5_2.html
+│   ├── song5_3.html
+│   ├── song5_4.html
+│   └── song5_5.html
 ├── artist-banner
-│   ├── banner1.jpg
-│   └── banner2.jpg
+│   ├── banner1.png
+│   ├── banner2.png
+│   ├── banner3.png
+│   ├── banner4.png
+│   └── banner5.png
 ├── artist-cover
-│   └── artist1.jpeg
-├── artist1.html
+│   ├── artist1.png
+│   ├── artist2.png
+│   ├── artist3.png
+│   ├── artist4.png
+│   └── artist5.png
+├── artists
+│   ├── artist1.html
+│   ├── artist2.html
+│   ├── artist3.html
+│   ├── artist4.html
+│   ├── artist5.html
+│   └── css
+│       ├── artist-page.css
+│       ├── footer.css
+│       ├── index.css
+│       └── nav-bar.css
 ├── artists.html
 ├── assets
 │   ├── about-bg.jpg
@@ -63,6 +155,9 @@ Add a file structure here with the basic details about files, below is an exampl
 │   ├── logo2.png
 │   ├── logout.svg
 │   ├── manage-account.svg
+│   ├── pfp-amey.jpeg
+│   ├── pfp-gaurav.jpeg
+│   ├── pfp_gaurav.jpeg
 │   ├── search.svg
 │   ├── social-fb-white.png
 │   ├── social-fb.png
@@ -74,7 +169,9 @@ Add a file structure here with the basic details about files, below is an exampl
 │   ├── star-empty.svg
 │   ├── star-full.svg
 │   ├── star-half.svg
+│   ├── user.jpg
 │   └── verified.svg
+├── cookie.html
 ├── css
 │   ├── album.css
 │   ├── artist-page.css
@@ -83,8 +180,15 @@ Add a file structure here with the basic details about files, below is an exampl
 │   ├── index.css
 │   └── nav-bar.css
 ├── index.html
-└── song-cover
-└── song1.png
+├── news-images
+│   ├── news1.jpeg
+│   ├── news2.jpeg
+│   └── news3.jpg
+├── privacy.html
+├── sitemap.html
+├── song-cover
+│   └── song1.png
+└── tnc.html
 ```
 
 | No | File/Folder Name | Details
