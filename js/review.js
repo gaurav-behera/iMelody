@@ -12,7 +12,7 @@ myTextarea.addEventListener("input", function () {
 
 let review_template_html = `
 <div class="review-item">
-    <div style=" width: 25%; max-width: 300px; min-width: 250px; text-align: center; padding-bottom: 10px">
+    <div style=" width: 25%; max-width: 300px; min-width: 250px; text-align: center; padding-bottom: 15px">
         <p class="review-user-name">Random Name</p>
         <div>
             <div class="rating-container">
@@ -30,7 +30,6 @@ let review_template_html = `
 </div>
 `;
 
-
 let reset_stars = `
 <input type="radio" name="star" id="star-5" />
 <label for="star-5" class="fas fa-star"></label>
@@ -41,7 +40,7 @@ let reset_stars = `
 <input type="radio" name="star" id="star-2" />
 <label for="star-2" class="fas fa-star"></label>
 <input type="radio" name="star" id="star-1" />
-<label for="star-1" class="fas fa-star"></label>`
+<label for="star-1" class="fas fa-star"></label>`;
 
 function storeReview() {
 	let input_name = document.querySelector("input[name='Name']").value;
@@ -91,9 +90,11 @@ function resetFields() {
 	displayCharsLeft();
 }
 
-function showSubmittedText(){
-    document.getElementById("review-submitted-text").style.opacity = 1;
-    setTimeout(function() {document.getElementById("review-submitted-text").style.opacity = "0"}, 2000)
+function showSubmittedText() {
+	document.getElementById("review-submitted-text").style.opacity = 1;
+	setTimeout(function () {
+		document.getElementById("review-submitted-text").style.opacity = "0";
+	}, 2000);
 }
 
 let submit_button = document.getElementById("submit-button");
@@ -110,5 +111,5 @@ submit_button.addEventListener("click", () => {
 	}
 	displayReview(review);
 	resetFields();
-    showSubmittedText();
+	showSubmittedText();
 });
