@@ -16,17 +16,19 @@ At iMelody, we are passionate about music and committed to helping you find the 
 
 ## About
 
-iMelody is designed to allow you to discover new songs and artists through our curated playlists, user-generated recommendations, and trending charts. It also allows you to search for your favourite songs, artists, or albums and find information about them. The website also displays news headlines about recent music releases to keep you updated on the top charts.
+iMelody is designed to allow you to discover new songs and artists through our curated playlists, user-generated recommendations, and trending charts. It also allows you to search for your favourite songs and preview them. The website also gives you information about the featured artist of the week, a countdown to their next song release along with ratings and reviews about the artist.
 
 ## Usage
 
 To use iMelody, simply navigate to our homepage and begin exploring our database. Here are a few additional tips to help you get started:
 - The homepage has featured songs, albums, and artists based on the top charts, which you can browse through to discover new music. The iMelody logo in the navigation bar can be used to visit the homepage from any other webpage.
-- The navigation bar present on every page allows you to quickly search for songs, albums, and artists.
+- The navigation bar present on every page allows you to quickly search for songs, and view artists.
+- The search page can be used to browse through a massive database of songs and preview them.
 - The artists' section on the navigation bar allows you to browse through a list of top-trending artists and view their albums and songs.
 - Clicking on any album shows details about the album, including all the songs (along with their genre, duration, and rating) in the album, the year of release, and the total duration of the album.
-- Clicking on any artist shows the top albums of the artist. You can view more details about the album by clicking on any artist.
+- Clicking on any artist shows the top albums of the artist. You can view more details about the albums by clicking on any artist.
 - The About section in the navigation bar contains details about the contents and usage of the website, along with details about the team who worked on iMelody.
+- The featured artist section gives information about the artist featured for the present week. It also gives details to their next song release as well as a rating/review system to add your own review or view reviews of others.
 - The sitemap shows a brief overview of the layout of the entire website, the sites present, and the relationships between them.
 
 ### Installation
@@ -38,11 +40,11 @@ git clone https://github.com/CS6-201-ISS-S23/project-is-s.git
 2. Navigate to the `index.html` file present in the main directory and open the file in any web browser.
 
 ### File Structure
-Add a file structure here with the basic details about files, below is an example.
 
 ```
 .
 ├── ASSUMPTIONS.md
+├── README.md
 ├── about.html
 ├── album-cover
 │   ├── album1_1.png
@@ -95,32 +97,7 @@ Add a file structure here with the basic details about files, below is an exampl
 │   ├── album5_2.html
 │   ├── album5_3.html
 │   ├── album5_4.html
-│   ├── album5_5.html
-│   ├── song1_1.html
-│   ├── song1_2.html
-│   ├── song1_3.html
-│   ├── song1_4.html
-│   ├── song1_5.html
-│   ├── song2_1.html
-│   ├── song2_2.html
-│   ├── song2_3.html
-│   ├── song2_4.html
-│   ├── song2_5.html
-│   ├── song3_1.html
-│   ├── song3_2.html
-│   ├── song3_3.html
-│   ├── song3_4.html
-│   ├── song3_5.html
-│   ├── song4_1.html
-│   ├── song4_2.html
-│   ├── song4_3.html
-│   ├── song4_4.html
-│   ├── song4_5.html
-│   ├── song5_1.html
-│   ├── song5_2.html
-│   ├── song5_3.html
-│   ├── song5_4.html
-│   └── song5_5.html
+│   └── album5_5.html
 ├── artist-banner
 │   ├── banner1.png
 │   ├── banner2.png
@@ -138,26 +115,29 @@ Add a file structure here with the basic details about files, below is an exampl
 │   ├── artist2.html
 │   ├── artist3.html
 │   ├── artist4.html
-│   ├── artist5.html
-│   └── css
-│       ├── artist-page.css
-│       ├── footer.css
-│       ├── index.css
-│       └── nav-bar.css
+│   └── artist5.html
 ├── artists.html
 ├── assets
 │   ├── about-bg.jpg
 │   ├── arrow.svg
 │   ├── background.jpeg
+│   ├── filter-icon.png
+│   ├── heart-empty.svg
+│   ├── heart-full.svg
 │   ├── liked.svg
 │   ├── logo.jpg
 │   ├── logo.png
 │   ├── logo2.png
 │   ├── logout.svg
 │   ├── manage-account.svg
+│   ├── next-icon.svg
+│   ├── oops.png
+│   ├── pause-icon.svg
 │   ├── pfp-amey.jpeg
 │   ├── pfp-gaurav.jpeg
 │   ├── pfp_gaurav.jpeg
+│   ├── play-icon.svg
+│   ├── prev-icon.svg
 │   ├── search.svg
 │   ├── social-fb-white.png
 │   ├── social-fb.png
@@ -170,21 +150,27 @@ Add a file structure here with the basic details about files, below is an exampl
 │   ├── star-full.svg
 │   ├── star-half.svg
 │   ├── user.jpg
-│   └── verified.svg
+│   ├── verified.svg
+│   └── volume-icon.svg
 ├── cookie.html
 ├── css
 │   ├── album.css
 │   ├── artist-page.css
 │   ├── artists.css
+│   ├── featured-artist.css
 │   ├── footer.css
 │   ├── index.css
-│   └── nav-bar.css
+│   ├── nav-bar.css
+│   └── search-page.css
+├── featured-artist.html
 ├── index.html
-├── news-images
-│   ├── news1.jpeg
-│   ├── news2.jpeg
-│   └── news3.jpg
+├── js
+│   ├── countdown.js
+│   ├── review.js
+│   ├── search.js
+│   └── typing-effect.js
 ├── privacy.html
+├── search-page.html
 ├── sitemap.html
 ├── song-cover
 │   └── song1.png
@@ -193,15 +179,22 @@ Add a file structure here with the basic details about files, below is an exampl
 
 | No | File/Folder Name | Details
 |----|------------|-------|
-| 1 | index.html | Homepage of the iMelody website.
-| 2 | about.html | Information about the website and its creators.
-|| album-cover/ | Album cover images for the albums
-|| artist-banner/ | Banner images for the artists
-|| artist-cover/ | Cover images of the artists
-|| artists.html | Webpage containing a list of all the artists.
-|| assets/ | Images and icons used in the website.
-|| css/ | Cascading Style Sheets (CSS) used to style the website.
-|| song-cover/ | Cover images of songs
+| 1| index.html | Homepage of the website
+| 2| search-page.html | Webpage to search for songs
+| 3| featured-artist.html | Webpage containg details about the featured artist
+| 4| artists.html | Webpage containing a list of all the artists
+| 5| about.html | Information about the website and it's creators
+| 6| README.md | Detials about the project
+| 7| ASSUMPTIONS.md | Assumptions made in the project
+| 8| albums/ | Webpages for each album
+| 9| artists/ | Webpages for each artist
+| 10| css/ | Cascading Style Sheets (CSS) used to style the website
+| 11| js/ | Javascript files for the webpages
+| 12| album-cover/ | Album cover images for the albums
+| 13| artist-cover/ | Cover images of the artists
+| 14| artist-banner/ | Banner images for the artists
+| 15| assets/ | Images and icons used in the website
+
 
 ## Authors
 Amey Karan - https://github.com/ameykaran2k22
