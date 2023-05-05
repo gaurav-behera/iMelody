@@ -1,0 +1,122 @@
+.album-cover {
+  border-radius: 15px;
+  width: 500px;
+  margin-left: 20px;
+  /* margin-right: 20px;  */
+}
+
+.album-details {
+  text-align: center;
+}
+
+.album-name {
+  color: white;
+  font-family: "Urbanist";
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 0.975em;
+  padding: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.album-artist,
+.album-year,
+.album-duration {
+  color: white;
+  font-family: "Urbanist";
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 10px;
+}
+
+.album-artist {
+  font-size: 35px;
+}
+
+.list-of-songs-title {
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 10px;
+  color: white;
+  line-height: 30px;
+}
+
+.list-of-songs {
+  display: grid;
+  overflow-y: scroll;
+  padding: 25px 20px 20px 20px;
+  scrollbar-width: none;
+}
+
+.list-of-songs::-webkit-scrollbar {
+  display: none;
+}
+
+.song-item {
+  backdrop-filter: saturate(170%) blur(10px);
+  padding: 10px;
+  width: 1100px;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  transition: transform 300ms, box-shadow linear 300ms;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.song-item:hover {
+  box-shadow: 5px 5px 10px 0px #1b5674;
+  transform: scale(1.03);
+  cursor: default;
+}
+
+.song-item:active {
+  backdrop-filter: saturate(270%) blur(10px);
+}
+
+.song-details {
+  margin-left: 20px;
+}
+
+.song-image {
+  border-radius: 15px;
+  width: 100px;
+  max-width: 120px;
+  aspect-ratio: 1/1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(10px) translateY(10px);
+  margin-right: 30px;
+  object-fit: fill;
+}
+
+.song-name {
+  color: white;
+  font-family: "Urbanist";
+  font-weight: 600;
+  font-size: 30px;
+  margin: 15px;
+  line-height: 0.995em;
+}
+
+.song-artist {
+  color: white;
+  font-family: "Urbanist";
+  font-size: 26px;
+  margin: 15px;
+  line-height: 0.995em;
+}
+
+.song-duration {
+  text-align: center;
+}
+
+.song-like {
+  filter: invert(100%);
+}

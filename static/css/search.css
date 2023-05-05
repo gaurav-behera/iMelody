@@ -1,0 +1,241 @@
+.search-bar {
+	border-radius: 64px;
+	height: 60px;
+	display: flex;
+	margin: 9px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: #b9d6ef;
+	align-items: center;
+	justify-content: right;
+	width: 500px;
+}
+.search-input {
+	width: 500px;
+	transition: 400ms;
+	height: 20px;
+	border: none;
+	font-family: "Poppins";
+	font-size: 24px;
+	/* opacity: 75%; */
+	background-color: transparent;
+	border: 0;
+	outline: none;
+	color: black;
+	padding-bottom: 5px;
+}
+
+.filter-button {
+	background-color: #b9d6ef;
+	border: none;
+	position: relative;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: center;
+	padding: 10px;
+	z-index: 2;
+}
+
+.filter-container {
+	display: none;
+	position: absolute;
+	transform: translate(373px, 75px);
+	background-color: #b9d6ef;
+	padding: 20px;
+	padding-bottom: 5px;
+	z-index: 1;
+	width: 200px;
+	font-family: "Poppins";
+	border-radius: 30px;
+	opacity: 0%;
+	transition: opacity 200ms ease-in-out;
+}
+
+.filter-options-button {
+	background-color: #007bff;
+	/* color: #fff; */
+	font-weight: 800;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	width: 97px;
+}
+
+.list-of-results {
+	display: grid;
+	overflow-y: scroll;
+	/* flex-wrap: nowrap; */
+	padding-top: 25px;
+	/* margin-left: 300px; */
+	padding-left: 20px;
+	padding-right: 20px;
+
+	/* transform: translateY(-15px); */
+	padding-bottom: 20px;
+	/* height:70vh; */
+	scrollbar-width: none;
+}
+
+.list-of-results::-webkit-scrollbar {
+	display: none;
+}
+
+.result-item {
+	/* background-color: #323232; */
+	backdrop-filter: saturate(170%) blur(10px);
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/* width:90%; */
+	/* height: 100px; */
+	width: 1000px;
+	border-radius: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.4);
+	transition: transform 300ms, box-shadow linear 300ms;
+
+	display: inline-flex;
+	flex-direction: row;
+	/* flex-wrap: nowrap; */
+	align-items: center;
+}
+
+.result-item:hover {
+	/* box-shadow: 5px 5px 10px 0px #1b5674; */
+	box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.7);
+	transform: scale(1.01);
+	cursor: default;
+}
+
+.result-item:active {
+	/* background-color: #424242; */
+	backdrop-filter: saturate(220%) blur(10px);
+}
+
+.song-details {
+	margin-left: 20px;
+}
+.song-image {
+	border-radius: 15px;
+	/* width: 100%; */
+	min-width: 80px;
+	max-width: 100px;
+	/* height: 100%; */
+	margin-right: 30px;
+	object-fit: contain;
+}
+
+.song-name {
+	color: white;
+	font-family: "Urbanist";
+	font-weight: 600;
+	font-size: 24px;
+	/* line-height: 10px; */
+}
+.song-artist {
+	color: white;
+	font-family: "Urbanist";
+	font-size: 20px;
+	/* line-height: 10px; */
+	transform: translateY(-10px);
+}
+
+.song-genre-div {
+	/* display: flex; */
+	/* align-items: center;
+	justify-content: center; */
+	/* text-align: center; */
+	text-align: center;
+	border: none;
+}
+
+.song-duration {
+	font-family: Poppins;
+	font-size: 24px;
+	color: white;
+	font-weight: 200;
+}
+
+.song-genre {
+	font-family: "Urbanist";
+	font-size: 20px;
+	background-color: #b9d6ef;
+	border-radius: 20px;
+	padding: 10px;
+	font-weight: 600;
+	/* align-self:center; */
+	display: inline-block;
+}
+
+/* audio player */
+.music-player {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: lightblue; */
+	padding: 16px;
+	border-radius: 20px;
+	/* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+	backdrop-filter: saturate(270%) blur(20px);
+	height: 550px;
+}
+
+.controls {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	max-width: 200px;
+}
+
+.control-btn {
+	border: none;
+	background-color: transparent;
+	/* backdrop-filter: saturate(220%) blur(10px); */
+	cursor: pointer;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+	/* transition: background-color 0.2s ease; */
+}
+
+.start-song-button {
+	border: none;
+	background-color: transparent;
+	/* backdrop-filter: saturate(220%) blur(10px); */
+	cursor: pointer;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+}
+
+.control-icon {
+	transition: all 200ms;
+}
+.control-icon:hover {
+	transform: scale(1.2);
+}
+
+.progress-bar {
+	width: 400px;
+	height: 4px;
+	/* background-color: #ddd; */
+	border-radius: 4px;
+	margin-top: 8px;
+}
+
+.volume-slider {
+	display: none;
+	position: absolute;
+	transform: translate(-155px, -70px);
+	height: 5px;
+}

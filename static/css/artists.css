@@ -1,0 +1,89 @@
+.grid-title {
+  font-family: "Poppins";
+  font-weight: 800;
+  font-size: 60px;
+  margin: 0px;
+  margin-bottom: 10px;
+  max-width: 1900px;
+  color: white;
+}
+
+.grid-subtitle {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 30px;
+  font-style: italic;
+  line-height: 10px;
+  margin: 0px;
+  margin-bottom: 10px;
+  max-width: 1900px;
+  color: white;
+}
+
+.grid-of-artists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 2fr));
+  flex-direction: row;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  scrollbar-width: none;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.artist-card {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 300px;
+  min-width: 5%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.artist-image {
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.4);
+  width: 80%;
+  object-fit: fill;
+  aspect-ratio: 1/1;
+  transition: transform 400ms ease-in-out, border-radius 400ms, width 400ms;
+}
+
+.artist-name {
+  color: white;
+  font-family: "Urbanist";
+  position: absolute;
+  font-weight: 600;
+  font-size: 30px;
+  left: 50%;
+  transform: translate(-50%);
+  transition: transform 400ms, font-size 400ms;
+  pointer-events: none;
+}
+
+.artist-name p {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+.artist-image:hover {
+  transform: scale(1.05);
+  border-radius: 10px;
+  width: 100%;
+  object-fit: fill;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 3px rgba(50, 50, 50, 0.7);
+}
+
+.artist-image:hover + .artist-name {
+  transform: translate(-50%, -110%);
+  font-size: 50px;
+  text-shadow: 2px 2px black;
+  /* color: rgb(150, 150, 150); */
+}
