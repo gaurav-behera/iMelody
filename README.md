@@ -10,6 +10,7 @@ At iMelody, we are passionate about music and committed to helping you find the 
 - [Index](#index)
 - [About](#about)
 - [Usage](#usage)
+  - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [File Structure](#file-structure)
 - [Authors](#authors)
@@ -25,19 +26,31 @@ To use iMelody, simply navigate to our homepage and begin exploring our database
 - The navigation bar present on every page allows you to quickly search for songs, and view artists.
 - The search page can be used to browse through a massive database of songs and preview them.
 - The artists' section on the navigation bar allows you to browse through a list of top-trending artists and view their albums and songs.
-- Clicking on any album shows details about the album, including all the songs (along with their genre, duration, and rating) in the album, the year of release, and the total duration of the album.
+- Clicking on any album shows details about the album, including all the songs along with their duration, the year of release, and the total duration of the album.
+- There is an option to like songs and every liked song is added to the liked songs playlist which can be viewed from the navigation bar.
 - Clicking on any artist shows the top albums of the artist. You can view more details about the albums by clicking on any artist.
 - The About section in the navigation bar contains details about the contents and usage of the website, along with details about the team who worked on iMelody.
 - The featured artist section gives information about the artist featured for the present week. It also gives details to their next song release as well as a rating/review system to add your own review or view reviews of others.
 - The sitemap shows a brief overview of the layout of the entire website, the sites present, and the relationships between them.
 
+### Prerequisites
+A `python 3.9` or newer environment with `flask` and `sqlite3` installed.
+
+Or alternatively run this command in a python environment.
+```
+pip install -r requirements.txt
+```
+
 ### Installation
+
 1. Clone the repository using the command:
 ```
 git clone https://github.com/CS6-201-ISS-S23/project-is-s.git
 ```
-
-2. Navigate to the `index.html` file present in the main directory and open the file in any web browser.
+2. Run `main.py` from the root directory
+```
+python main.py
+```
 
 ### File Structure
 
@@ -45,156 +58,101 @@ git clone https://github.com/CS6-201-ISS-S23/project-is-s.git
 .
 ├── ASSUMPTIONS.md
 ├── README.md
-├── about.html
-├── album-cover
-│   ├── album1_1.png
-│   ├── album1_2.png
-│   ├── album1_3.png
-│   ├── album1_4.png
-│   ├── album1_5.png
-│   ├── album2_1.png
-│   ├── album2_2.png
-│   ├── album2_3.png
-│   ├── album2_4.png
-│   ├── album2_5.png
-│   ├── album3_1.png
-│   ├── album3_2.png
-│   ├── album3_3.png
-│   ├── album3_4.png
-│   ├── album3_5.png
-│   ├── album4_1.png
-│   ├── album4_2.png
-│   ├── album4_3.png
-│   ├── album4_4.png
-│   ├── album4_5.png
-│   ├── album5_1.png
-│   ├── album5_2.png
-│   ├── album5_3.png
-│   ├── album5_4.png
-│   └── album5_5.png
-├── albums
-│   ├── album1_1.html
-│   ├── album1_2.html
-│   ├── album1_3.html
-│   ├── album1_4.html
-│   ├── album1_5.html
-│   ├── album2_1.html
-│   ├── album2_2.html
-│   ├── album2_3.html
-│   ├── album2_4.html
-│   ├── album2_5.html
-│   ├── album3_1.html
-│   ├── album3_2.html
-│   ├── album3_3.html
-│   ├── album3_4.html
-│   ├── album3_5.html
-│   ├── album4_1.html
-│   ├── album4_2.html
-│   ├── album4_3.html
-│   ├── album4_4.html
-│   ├── album4_5.html
-│   ├── album5_1.html
-│   ├── album5_2.html
-│   ├── album5_3.html
-│   ├── album5_4.html
-│   └── album5_5.html
-├── artist-banner
-│   ├── banner1.png
-│   ├── banner2.png
-│   ├── banner3.png
-│   ├── banner4.png
-│   └── banner5.png
-├── artist-cover
-│   ├── artist1.png
-│   ├── artist2.png
-│   ├── artist3.png
-│   ├── artist4.png
-│   └── artist5.png
-├── artists
-│   ├── artist1.html
-│   ├── artist2.html
-│   ├── artist3.html
-│   ├── artist4.html
-│   └── artist5.html
-├── artists.html
-├── assets
-│   ├── about-bg.jpg
-│   ├── arrow.svg
-│   ├── background.jpeg
-│   ├── filter-icon.png
-│   ├── heart-empty.svg
-│   ├── heart-full.svg
-│   ├── liked.svg
-│   ├── logo.jpg
-│   ├── logo.png
-│   ├── logo2.png
-│   ├── logout.svg
-│   ├── manage-account.svg
-│   ├── next-icon.svg
-│   ├── oops.png
-│   ├── pause-icon.svg
-│   ├── pfp-amey.jpeg
-│   ├── pfp-gaurav.jpeg
-│   ├── pfp_gaurav.jpeg
-│   ├── play-icon.svg
-│   ├── prev-icon.svg
-│   ├── search.svg
-│   ├── social-fb-white.png
-│   ├── social-fb.png
-│   ├── social-gh.png
-│   ├── social-ig-white.png
-│   ├── social-ig.png
-│   ├── social-lk.png
-│   ├── social-tw-white.png
-│   ├── star-empty.svg
-│   ├── star-full.svg
-│   ├── star-half.svg
-│   ├── user.jpg
-│   ├── verified.svg
-│   └── volume-icon.svg
-├── cookie.html
-├── css
-│   ├── album.css
-│   ├── artist-page.css
-│   ├── artists.css
-│   ├── featured-artist.css
-│   ├── footer.css
-│   ├── index.css
-│   ├── nav-bar.css
-│   └── search-page.css
-├── featured-artist.html
-├── index.html
-├── js
-│   ├── countdown.js
-│   ├── review.js
-│   ├── search.js
-│   └── typing-effect.js
-├── privacy.html
-├── search-page.html
-├── sitemap.html
-├── song-cover
-│   └── song1.png
-└── tnc.html
+├── iMelody.db
+├── main.py
+├── static
+│   ├── artist_banner
+│   │   ├── 06HL4z0CvFAxyc27GXpf02.png
+│   │   ├── 1Xyo4u8uXC1ZmMpatF05PJ.png
+│   │   ├── 1dVygo6tRFXC8CSWURQJq2.png
+│   │   ├── 1vCWHaC5f2uS3yhpwWbIA6.png
+│   │   ├── 4IKVDbCSBTxBeAsMKjAuTs.png
+│   │   ├── 4gzpq5DPGxSnKTe4SA8HAU.png
+│   │   ├── 4zCH9qm4R2DADamUHMCa6O.png
+│   │   ├── 53XhwfbYqKCa1cC15pYq2q.png
+│   │   ├── 5Pwc4xIPtQLFEnJriah9YJ.png
+│   │   ├── 69GGBxA162lTqCwzJG5jLp.png
+│   │   └── 7zFBW2JxM4bgTTKxCRcS8Q.png
+│   ├── assets
+│   │   ├── about-bg.jpg
+│   │   ├── arrow.svg
+│   │   ├── background.jpeg
+│   │   ├── filter-icon.png
+│   │   ├── heart-empty.svg
+│   │   ├── heart-full.svg
+│   │   ├── heart.svg
+│   │   ├── liked.svg
+│   │   ├── logo.png
+│   │   ├── logo2.png
+│   │   ├── logout.svg
+│   │   ├── manage-account.svg
+│   │   ├── next-icon.svg
+│   │   ├── oops.png
+│   │   ├── pause-icon.svg
+│   │   ├── pfp-amey.jpeg
+│   │   ├── pfp-gaurav.jpeg
+│   │   ├── play-icon.svg
+│   │   ├── prev-icon.svg
+│   │   ├── search.svg
+│   │   ├── social-fb-white.png
+│   │   ├── social-fb.png
+│   │   ├── social-gh.png
+│   │   ├── social-ig-white.png
+│   │   ├── social-ig.png
+│   │   ├── social-lk.png
+│   │   ├── social-tw-white.png
+│   │   ├── star-empty.svg
+│   │   ├── star-full.svg
+│   │   ├── star-half.svg
+│   │   ├── user.jpg
+│   │   ├── verified.svg
+│   │   └── volume-icon.svg
+│   ├── css
+│   │   ├── album.css
+│   │   ├── artist.css
+│   │   ├── artists.css
+│   │   ├── featured.css
+│   │   ├── footer.css
+│   │   ├── index.css
+│   │   ├── navbar.css
+│   │   └── search.css
+│   └── js
+│       ├── album.js
+│       ├── countdown.js
+│       ├── review.js
+│       ├── search.js
+│       └── typing-effect.js
+└── templates
+    ├── about.html
+    ├── album.html
+    ├── artist.html
+    ├── artists.html
+    ├── cookie.html
+    ├── featured.html
+    ├── index.html
+    ├── liked.html
+    ├── privacy.html
+    ├── search.html
+    ├── sitemap.html
+    └── tnc.html
 ```
 
 | No | File/Folder Name | Details
 |----|------------|-------|
-| 1| index.html | Homepage of the website
-| 2| search-page.html | Webpage to search for songs
-| 3| featured-artist.html | Webpage containg details about the featured artist
-| 4| artists.html | Webpage containing a list of all the artists
-| 5| about.html | Information about the website and it's creators
-| 6| README.md | Detials about the project
-| 7| ASSUMPTIONS.md | Assumptions made in the project
-| 8| albums/ | Webpages for each album
-| 9| artists/ | Webpages for each artist
-| 10| css/ | Cascading Style Sheets (CSS) used to style the website
-| 11| js/ | Javascript files for the webpages
-| 12| album-cover/ | Album cover images for the albums
-| 13| artist-cover/ | Cover images of the artists
-| 14| artist-banner/ | Banner images for the artists
-| 15| assets/ | Images and icons used in the website
-
+| 1| main.py | Flask app for the webpage
+| 2| index.html | Homepage of the website
+| 3| search.html | Webpage to search for songs
+| 4| liked.html | Webpage to show liked songs
+| 5| featured.html | Webpage containing details about the featured artist
+| 6| artists.html | Webpage containing a list of all the artists
+| 7| artist.html | Webpage template for albums of each artist
+| 8| album.html | Webpage template songs of each album
+| 9| about.html | Information about the website and it's creators
+| 10| README.md | Details about the project
+| 11| ASSUMPTIONS.md | Assumptions made in the project
+| 12| css/ | Cascading Style Sheets (CSS) used to style the website
+| 13| js/ | Javascript files for the webpages
+| 14| assets/ | Images and icons used in the website
 
 ## Authors
 Amey Karan - https://github.com/ameykaran2k22
